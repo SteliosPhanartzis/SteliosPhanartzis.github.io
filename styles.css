@@ -2,15 +2,20 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+html{
+	cursor: url("./point.png"),url("./point.png"), auto;
+}
 body{
 	background-color: #222;
 	color: #fff;
-	font-family: 'Fjalla One', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 h1{
 	font-size:4em;
 	font-weight: normal;
 	margin:.83em 0;
+	/* float:  right; */
+	padding: 0 10%;
 }
 #logo, .hover, .navOption, nav{
 	display: inline-block;
@@ -39,7 +44,7 @@ h1{
 	background-image:linear-gradient(0deg,#9dd 2px,rgba(0,0,0,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
 }
 #logo:hover{
-	box-shadow: 0px 0px 3px #888;
+	box-shadow: 0px 0px 0.2em #888;
 }
 .navOption:hover .hover{
 	margin-right: 0%;
@@ -47,10 +52,11 @@ h1{
 	width: 6em;
 }
 #logo:hover, .navOption:hover .hover{
-	text-shadow: 0px 0px 2px #888;
+	text-shadow: 0px 0px 0.18em #888;
 	color:#aff;
 	border-color: #9dd;
 	transition: 0.4s ease-in;
+	cursor: url("./point.png"),url("./point.png"),pointer;
 }
 .menubar{
 	width: 3em;
