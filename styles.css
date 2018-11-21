@@ -25,7 +25,8 @@ h1{
 }
 nav{
 	margin: auto;
-	padding-left: 50%;
+	/*JS this*/
+	padding-left: 42%;
 }
 #logo{
 	font-size:2em;
@@ -61,6 +62,9 @@ nav{
 	border-color: #9dd;
 	transition: 0.4s ease-in;
 	cursor: url("./point.png"),url("./point.png"),pointer;
+}
+.hovLeft{
+	margin-right: -1em;
 }
 .flyUp, .flyDown{
 	position: absolute;
