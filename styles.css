@@ -9,11 +9,12 @@ body{
 	background-color: #222;
 	color: #fff;
 	font-family: 'Ubuntu', sans-serif;
+	display: block;
 }
 h1{
 	font-size:4em;
 	font-weight: normal;
-	margin:.83em auto;
+	margin: -1em auto;
 	opacity: 1;
 	padding: 0 0 0 5%;
 }
@@ -27,6 +28,9 @@ nav{
 	margin: auto;
 	/*JS this*/
 	padding-left: 42%;
+}
+p{
+	padding: 1.5em 0;
 }
 #logo{
 	font-size:2em;
@@ -84,9 +88,6 @@ h1:hover .flyDown{
 h1:hover .flyDown, h1:hover .flyUp{
 	transition: 1s ease-in;
 	opacity: 0;
-}
-h1:hover{
-	height: +100px;
 }
 .menubar{
 	width: 3em;
