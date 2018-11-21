@@ -13,16 +13,19 @@ body{
 h1{
 	font-size:4em;
 	font-weight: normal;
-	margin:.83em 0;
+	margin:.83em auto;
 	opacity: 1;
-	/* float:  right; */
-	padding: 0 10%;
+	padding: 0 0 0 5%;
 }
 #logo, .hover, .navOption, nav{
 	display: inline-block;
 	text-align: center;
 	font-family: 'Karla';
 	display: inline-block;
+}
+nav{
+	margin: auto;
+	padding-left: 50%;
 }
 #logo{
 	font-size:2em;
@@ -69,14 +72,17 @@ h1{
 	margin-left: 1.75em;
 }
 h1:hover .flyUp{
-	margin-top: -50px;
+	margin-top: -100px;
 }
 h1:hover .flyDown{
-	margin-top: +50px;
+	margin-top: +100px;
 }
 h1:hover .flyDown, h1:hover .flyUp{
 	transition: 1s ease-in;
 	opacity: 0;
+}
+h1:hover{
+	height: +100px;
 }
 .menubar{
 	width: 3em;
