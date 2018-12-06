@@ -74,7 +74,7 @@ p{
 	position: absolute;
 	display: inline-block;
 	margin: 0px;
-	transition: 1s ease-in;
+	transition: 1s ease-in 2s;	
 }
 .flyDown{
 	margin-left: 1.75em;
@@ -86,7 +86,7 @@ h1:hover .flyDown{
 	margin-top: +100px;
 }
 h1:hover .flyDown, h1:hover .flyUp{
-	transition: 1s ease-in;
+	transition: 1s ease-in 2s;
 	opacity: 0;
 }
 .menubar{
