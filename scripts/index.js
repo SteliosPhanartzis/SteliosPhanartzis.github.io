@@ -12,8 +12,17 @@ function elementOffset(){
 	var width = window.innerWidth;
 	var nav = document.getElementById('pageNav');
 	console.log(width + " " + $("#pageNav").width() + " " + $("#projects").width());
-	nav.style.paddingLeft = (width*.99-$("#pageNav").width())/2 + "px";
+//	nav.style.paddingLeft = ((width)-$("#pageNav").width())/2 + "px";
 }
+
+jQuery.expr.filters.offscreen = function(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+           (rect.x + rect.width) < 0 
+             || (rect.y + rect.height) < 0
+             || (rect.x > window.innerWidth || rect.y > window.innerHeight)
+         );
+};
 
 function pageLoad(){
 welcomeSplit();
@@ -22,4 +31,9 @@ elementOffset();
 
 $(window).resize(function(){
 	elementOffset();
+});
+
+$(window).scroll(function(){
+console.log($(':offscreen'));
+	
 });
