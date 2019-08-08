@@ -1,0 +1,352 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--web-view-ids: Main;
+}
+#Main * {
+	margin: 0;
+	padding: 0;
+}
+#Main {
+	position: absolute;
+	box-sizing: border-box;
+	background: #E5E5E5;
+	width: 1920px;
+	height: 3240px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	--web-view-name: Main;
+	--web-view-id: Main;
+	--web-enable-deep-linking: true;
+}
+#Ellipse_2 {
+	fill: rgba(2,123,255,1);
+}
+.Ellipse_2 {
+	position: absolute;
+	overflow: visible;
+	width: 380px;
+	height: 380px;
+	left: 1383px;
+	top: 258px;
+}
+#Stelios_Phanartzis {
+	position: absolute;
+	left: 300px;
+	top: 258px;
+	overflow: visible;
+	width: 632px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 70px;
+	color: rgba(23,25,26,1);
+}
+#Hello__my_name_is_Stelios_Phan {
+	position: absolute;
+	left: 300px;
+	top: 354px;
+	overflow: hidden;
+	width: 648px;
+	height: 85px;
+	line-height: 45px;
+	margin-top: -7.5px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 30px;
+	color: rgba(143,158,165,1);
+}
+#Front_end_Back_end_Core_Develo {
+	position: absolute;
+	left: 300px;
+	top: 479px;
+	overflow: hidden;
+	width: 347px;
+	height: 310px;
+	line-height: 60px;
+	margin-top: -15px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 30px;
+	color: rgba(143,158,165,1);
+}
+#NoPath {
+	fill: url(#NoPath_A0_Ellipse_3_pattern);
+	stroke: rgb(255, 255, 255);
+	stroke-width: 10px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.NoPath {
+	position: absolute;
+	overflow: visible;
+	width: 400px;
+	height: 400px;
+	left: 1240px;
+	top: 205px;
+}
+#Group_2 {
+	position: absolute;
+	width: 18px;
+	height: 40px;
+	left: 951px;
+	top: 970px;
+	overflow: visible;
+}
+#Ellipse_3 {
+	fill: rgba(255,255,255,1);
+	stroke: rgb(228, 235, 239);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Ellipse_3 {
+	position: absolute;
+	overflow: visible;
+	width: 10px;
+	height: 10px;
+	left: 4px;
+	top: 0px;
+}
+#Ellipse_4 {
+	fill: rgba(255,255,255,1);
+	stroke: rgb(228, 235, 239);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Ellipse_4 {
+	position: absolute;
+	overflow: visible;
+	width: 18px;
+	height: 18px;
+	left: 0px;
+	top: 22px;
+}
+#Group_2_A0_Group_2 {
+	position: absolute;
+	width: 18px;
+	height: 40px;
+	left: 951px;
+	top: 3130px;
+	overflow: visible;
+}
+#Ellipse_3_A0_Ellipse_6 {
+	fill: rgba(255,255,255,1);
+	stroke: rgb(228, 235, 239);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Ellipse_3_A0_Ellipse_6 {
+	position: absolute;
+	overflow: visible;
+	width: 10px;
+	height: 10px;
+	left: 4px;
+	top: 0px;
+}
+#Ellipse_4_A0_Ellipse_7 {
+	fill: rgba(255,255,255,1);
+	stroke: rgb(228, 235, 239);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Ellipse_4_A0_Ellipse_7 {
+	position: absolute;
+	overflow: visible;
+	width: 18px;
+	height: 18px;
+	left: 0px;
+	top: 22px;
+}
+#Group_4 {
+	position: absolute;
+	width: 670px;
+	height: 400px;
+	left: 300px;
+	top: 2660px;
+	overflow: visible;
+}
+#search {
+	fill: rgba(228,235,239,1);
+}
+.search {
+	transform: matrix(1,0,0,1,0,0);
+	overflow: visible;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 640px;
+	height: 370px;
+}
+#reco {
+	fill: url(#reco_A0_Rectangle_2_pattern);
+	stroke: rgb(255, 255, 255);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.reco {
+	position: absolute;
+	overflow: visible;
+	width: 640px;
+	height: 370px;
+	left: 0px;
+	top: 0px;
+}
+#Group_5 {
+	position: absolute;
+	width: 670px;
+	height: 400px;
+	left: 1000px;
+	top: 2400px;
+	overflow: visible;
+}
+#search_A0_Path_2 {
+	fill: rgba(228,235,239,1);
+}
+.search_A0_Path_2 {
+	transform: matrix(1,0,0,1,0,0);
+	overflow: visible;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 640px;
+	height: 370px;
+}
+#cs355 {
+	fill: url(#cs355_A0_Rectangle_4_pattern);
+	stroke: rgb(255, 255, 255);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.cs355 {
+	position: absolute;
+	overflow: visible;
+	width: 640px;
+	height: 370px;
+	left: 0px;
+	top: 0px;
+}
+#Group_3 {
+	position: absolute;
+	width: 670px;
+	height: 400px;
+	left: 300px;
+	top: 2150px;
+	overflow: visible;
+}
+#search_A0_Path_3 {
+	fill: rgba(228,235,239,1);
+}
+.search_A0_Path_3 {
+	transform: matrix(1,0,0,1,0,0);
+	overflow: visible;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 640px;
+	height: 370px;
+}
+#search_A0_Rectangle_5 {
+	fill: url(#search_A0_Rectangle_6_pattern);
+	stroke: rgb(255, 255, 255);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.search_A0_Rectangle_5 {
+	position: absolute;
+	overflow: visible;
+	width: 640px;
+	height: 370px;
+	left: 0px;
+	top: 0px;
+}
+#Ellipse_2_A0_Ellipse_8 {
+	fill: rgba(2,123,255,1);
+}
+.Ellipse_2_A0_Ellipse_8 {
+	position: absolute;
+	overflow: visible;
+	width: 380px;
+	height: 380px;
+	left: 1383px;
+	top: 1308px;
+}
+#About_Me {
+	position: absolute;
+	left: 300px;
+	top: 1308px;
+	overflow: visible;
+	width: 349px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 70px;
+	color: rgba(23,25,26,1);
+}
+#Stelios_Phanartzis_is_a_Suppor {
+	position: absolute;
+	left: 300px;
+	top: 1404px;
+	overflow: hidden;
+	width: 648px;
+	height: 416px;
+	line-height: 45px;
+	margin-top: -7.5px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 30px;
+	color: rgba(2,123,255,1);
+}
+#NoPath___Copy__3_ {
+	fill: url(#NoPath___Copy__3__A0_Ellipse_10_pattern);
+	stroke: rgb(255, 255, 255);
+	stroke-width: 10px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.NoPath___Copy__3_ {
+	position: absolute;
+	overflow: visible;
+	width: 400px;
+	height: 400px;
+	left: 1240px;
+	top: 1255px;
+}
