@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: Montserrat;
 }
 :root {
 	--web-view-ids: Main;
@@ -13,12 +14,12 @@ body {
 	position: absolute;
 	box-sizing: border-box;
 	background: #E5E5E5;
-	width: 1920px;
-	height: 3240px;
+	width: 100%;
+	height: 100%;
 	background-color: rgba(255,255,255,1);
 	overflow: hidden;
 	margin: 0;
-	padding: 0;
+	padding: 0 10%;
 	--web-view-name: Main;
 	--web-view-id: Main;
 	--web-enable-deep-linking: true;
@@ -34,23 +35,20 @@ body {
 	left: 1383px;
 	top: 258px;
 }
-#Stelios_Phanartzis {
+#Name {
 	position: absolute;
-	left: 300px;
 	top: 258px;
 	overflow: visible;
 	width: 632px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 70px;
 	color: rgba(23,25,26,1);
 }
-#Hello__my_name_is_Stelios_Phan {
+#Greeting {
 	position: absolute;
-	left: 300px;
 	top: 354px;
 	overflow: hidden;
 	width: 648px;
@@ -58,15 +56,13 @@ body {
 	line-height: 45px;
 	margin-top: -7.5px;
 	text-align: left;
-	font-family: Montserrat;
 	font-style: normal;
 	font-weight: lighter;
 	font-size: 30px;
 	color: rgba(143,158,165,1);
 }
-#Front_end_Back_end_Core_Develo {
+#Skills {
 	position: absolute;
-	left: 300px;
 	top: 479px;
 	overflow: hidden;
 	width: 347px;
@@ -74,28 +70,32 @@ body {
 	line-height: 60px;
 	margin-top: -15px;
 	text-align: left;
-	font-family: Montserrat;
 	font-style: normal;
 	font-weight: lighter;
 	font-size: 30px;
 	color: rgba(143,158,165,1);
 }
-#NoPath {
+#Portrait-1 {
 	fill: url(#NoPath_A0_Ellipse_3_pattern);
+	top: 205px;
+	left: 1240px;
+}
+#Portrait-2 {
+	fill: url(#NoPath___Copy__3__A0_Ellipse_10_pattern);
+	left: 1240px;
+	top: 1255px;
+}
+.Portrait-Template {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	overflow: visible;
 	stroke: rgb(255, 255, 255);
 	stroke-width: 10px;
 	stroke-linejoin: miter;
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
-}
-.NoPath {
-	position: absolute;
-	overflow: visible;
-	width: 400px;
-	height: 400px;
-	left: 1240px;
-	top: 205px;
 }
 #Group_2 {
 	position: absolute;
@@ -259,7 +259,7 @@ body {
 	position: absolute;
 	width: 670px;
 	height: 400px;
-	left: 300px;
+	left: 0;
 	top: 2150px;
 	overflow: visible;
 }
@@ -305,13 +305,11 @@ body {
 }
 #About_Me {
 	position: absolute;
-	left: 300px;
 	top: 1308px;
 	overflow: visible;
 	width: 349px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 70px;
@@ -319,7 +317,6 @@ body {
 }
 #Stelios_Phanartzis_is_a_Suppor {
 	position: absolute;
-	left: 300px;
 	top: 1404px;
 	overflow: hidden;
 	width: 648px;
@@ -327,26 +324,8 @@ body {
 	line-height: 45px;
 	margin-top: -7.5px;
 	text-align: left;
-	font-family: Montserrat;
 	font-style: normal;
 	font-weight: lighter;
 	font-size: 30px;
 	color: rgba(2,123,255,1);
-}
-#NoPath___Copy__3_ {
-	fill: url(#NoPath___Copy__3__A0_Ellipse_10_pattern);
-	stroke: rgb(255, 255, 255);
-	stroke-width: 10px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.NoPath___Copy__3_ {
-	position: absolute;
-	overflow: visible;
-	width: 400px;
-	height: 400px;
-	left: 1240px;
-	top: 1255px;
 }
