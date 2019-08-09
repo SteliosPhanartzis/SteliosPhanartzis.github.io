@@ -6,6 +6,9 @@ body {
 :root {
 	--web-view-ids: Main;
 }
+.Ellipse-Template {
+	border: 0;
+}
 #Main * {
 	margin: 0;
 	padding: 0;
@@ -106,7 +109,7 @@ body {
 	width: 18px;
 	height: 40px;
 	left: 49%;
-	top: 105%;
+	top: 56em;
 	overflow: visible;
 }
 #Ellipse_3 {
@@ -319,7 +322,7 @@ body {
 	font-size: 55px;
 	color: rgba(23,25,26,1);
 }
-#Stelios_Phanartzis_is_a_Suppor {
+#About_Me_Info {
 	position: absolute;
 	top: 1404px;
 	overflow: hidden;
@@ -332,4 +335,49 @@ body {
 	font-weight: lighter;
 	font-size: 25px;
 	color: rgba(2,123,255,1);
+}
+@media (max-width: 1079px){
+/*	#Portrait-1 {
+		fill: url(#NoPath_A0_Ellipse_3_pattern);
+		top: 205px;
+		left: 75%;
+	}
+	#Portrait-2 {
+		fill: url(#NoPath___Copy__3__A0_Ellipse_10_pattern);
+		top: 1255px;
+		left: 75%;
+	}
+	.Portrait-Template {
+		width: 300px;
+		height: 300px;
+		position: absolute;
+		overflow: visible;
+		stroke: rgb(255, 255, 255);
+		stroke-width: 10px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_2 {
+		position: absolute;
+		overflow: visible;
+		width: 280px;
+		height: 280px;
+		left: 77%;
+		top: 258px;
+	}
+	.Ellipse_2_A0_Ellipse_8 {
+		position: absolute;
+		overflow: visible;
+		width: 280px;
+		height: 280px;
+		left: 77%;
+		top: 1308px;
+	}*/
+	#About_Me_Info {
+		width: 550px;
+	}
+	#Greeting {
+		width: 550px;
 }
