@@ -2,109 +2,128 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"/> -->
 <title>Portfolio</title>
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="styles.css"/>
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+<nav>
+	<a href='#landing' onclick="window.scrollTo(0,$('#landing').offset().top)"><span id="logo">SP</span></a>
+	<div class="navOption"><a href="#about" onclick="goto('about')"><div class="hover">About Me</div></a></div>
+	<div class="navOption"><a href="#projects"><div class="hover hovLeft">Work</div></a></div>
+</nav>
 <div id="Main">
-	<svg class="Ellipse_2">
-		<ellipse id="Ellipse_2" rx="190" ry="190" cx="190" cy="190">
-		</ellipse>
-	</svg>
-	<div id="Name">
-		<span>Stelios Phanartzis</span>
-	</div>
-	<div id="Greeting">
-		<span>Hello, my name is Stelios Phanartzis. I am a Full Stack Web Developer &</span><span style="color:rgba(2,123,255,1);"> IT Specialist.</span>
-	</div>
-	<div id="Skills">
-		<span>Front-end<br/>Back-end<br/>Core Development<br/>Support Desk<br/>System Administration</span>
-	</div>
-	<svg class="Portrait-Template" id="Portrait-1">
-		<pattern elementId="NoPath_A0_Ellipse_3" id="NoPath_A0_Ellipse_3_pattern" x="0" y="0" width="100%" height="100%">
-			<image x="0" y="0" width="100%" height="100%" href="NoPath_A0_Ellipse_3_pattern.png" xlink:href="NoPath_A0_Ellipse_3_pattern.png"></image>
-		</pattern>
-		<ellipse class="Ellipse-Template" rx="190" ry="190" cx="190" cy="190">
-		</ellipse>
-	</svg>
-	<div id="Group_2">
-		<svg class="Ellipse_3">
-			<ellipse id="Ellipse_3" rx="5" ry="5" cx="5" cy="5">
+	<!-- Landing -->
+		<svg class="Ellipse_2">
+			<ellipse id="Ellipse_2" rx="190" ry="190" cx="190" cy="190">
 			</ellipse>
 		</svg>
-		<svg class="Ellipse_4">
-			<ellipse id="Ellipse_4" rx="9" ry="9" cx="9" cy="9">
-			</ellipse>
-		</svg>
-	</div>
-	<div id="Group_2_A0_Group_2">
-		<svg class="Ellipse_3_A0_Ellipse_6">
-			<ellipse id="Ellipse_3_A0_Ellipse_6" rx="5" ry="5" cx="5" cy="5">
-			</ellipse>
-		</svg>
-		<svg class="Ellipse_4_A0_Ellipse_7">
-			<ellipse id="Ellipse_4_A0_Ellipse_7" rx="9" ry="9" cx="9" cy="9">
-			</ellipse>
-		</svg>
-	</div>
-	<div id="Group_4">
-		<svg class="search" viewBox="0 0 640 370">
-			<path id="search" d="M 0 1 L 640 0 L 640 370 L 0 370 L 0 1 Z">
-			</path>
-		</svg>
-		<svg class="reco">
-			<pattern elementId="reco_A0_Rectangle_2" id="reco_A0_Rectangle_2_pattern" x="0" y="0" width="100%" height="100%">
-				<image x="0" y="0" width="100%" height="100%" href="reco_A0_Rectangle_2_pattern.png" xlink:href="reco_A0_Rectangle_2_pattern.png"></image>
+		<section id="landing" name="greeting">
+			<div id="Name">
+				<span>Stelios Phanartzis</span>
+			</div>
+		</section>
+		<div id="Greeting">
+			<span>Hello, my name is Stelios Phanartzis. I am a Full Stack Web Developer &</span><span style="color:rgba(2,123,255,1);"> IT Specialist.</span>
+		</div>
+		<div id="Skills">
+			<span>Front-end<br/>Back-end<br/>Core Development<br/>Support Desk<br/>System Administration</span>
+		</div>
+		<svg class="Portrait-Template" id="Portrait-1">
+			<pattern elementId="NoPath_A0_Ellipse_3" id="NoPath_A0_Ellipse_3_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="NoPath_A0_Ellipse_3_pattern.png" xlink:href="NoPath_A0_Ellipse_3_pattern.png"></image>
 			</pattern>
-			<rect id="reco" rx="0" ry="0" x="0" y="0" width="640" height="370">
-			</rect>
+			<ellipse class="Ellipse-Template" rx="190" ry="190" cx="190" cy="190">
+			</ellipse>
 		</svg>
-	</div>
-	<div id="Group_5">
-		<svg class="search_A0_Path_2" viewBox="0 0 640 370">
-			<path id="search_A0_Path_2" d="M 0 1 L 640 0 L 640 370 L 0 370 L 0 1 Z">
-			</path>
+		<div id="Group_2">
+			<svg class="Ellipse_3">
+				<ellipse id="Ellipse_3" rx="5" ry="5" cx="5" cy="5">
+				</ellipse>
+			</svg>
+			<svg class="Ellipse_4">
+				<ellipse id="Ellipse_4" rx="9" ry="9" cx="9" cy="9">
+				</ellipse>
+			</svg>
+		</div>
+<!-- About -->
+	<section id="about" name="about">
+		<div id="About_Me">
+			<span>About Me</span>
+		</div>
+	</section>
+		<svg class="Ellipse_2_A0_Ellipse_8">
+			<ellipse id="Ellipse_2_A0_Ellipse_8" rx="190" ry="190" cx="190" cy="190">
+			</ellipse>
 		</svg>
-		<svg class="cs355">
-			<pattern elementId="cs355_A0_Rectangle_4" id="cs355_A0_Rectangle_4_pattern" x="0" y="0" width="100%" height="100%">
-				<image x="0" y="0" width="100%" height="100%" href="cs355_A0_Rectangle_4_pattern.png" xlink:href="cs355_A0_Rectangle_4_pattern.png"></image>
+		<div id="About_Me_Info">
+			<span>Stelios Phanartzis</span><span style="color:rgba(143,158,165,1);"> is a Support Desk Technician with 4 years of experience in domain management, network administration, and full stack web development. Stelios’ interests are in privacy and security, full stack web applications, and natural language processing. He is currently completing his BS in computer science at Queens College.</span>
+		</div>
+		<svg class="Portrait-Template" id="Portrait-2">
+			<pattern elementId="NoPath___Copy__3__A0_Ellipse_10" id="NoPath___Copy__3__A0_Ellipse_10_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="NoPath___Copy__3__A0_Ellipse_10_pattern.png" xlink:href="NoPath___Copy__3__A0_Ellipse_10_pattern.png"></image>
 			</pattern>
-			<rect id="cs355" rx="0" ry="0" x="0" y="0" width="640" height="370">
-			</rect>
+			<ellipse id="" rx="190" ry="190" cx="190" cy="190">
+			</ellipse>
 		</svg>
+<!-- Projects -->
+<!-- 	<div id="projects" name="projects">
+	</div> -->
+		<div id="Group_4">
+			<svg class="search" viewBox="0 0 640 370">
+				<path id="search" d="M 0 1 L 640 0 L 640 370 L 0 370 L 0 1 Z">
+				</path>
+			</svg>
+			<svg class="reco">
+				<pattern elementId="reco_A0_Rectangle_2" id="reco_A0_Rectangle_2_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="reco_A0_Rectangle_2_pattern.png" xlink:href="reco_A0_Rectangle_2_pattern.png"></image>
+				</pattern>
+				<rect id="reco" rx="0" ry="0" x="0" y="0" width="640" height="370">
+				</rect>
+			</svg>
+		</div>
+		<div id="Group_5">
+			<svg class="search_A0_Path_2" viewBox="0 0 640 370">
+				<path id="search_A0_Path_2" d="M 0 1 L 640 0 L 640 370 L 0 370 L 0 1 Z">
+				</path>
+			</svg>
+			<svg class="cs355">
+				<pattern elementId="cs355_A0_Rectangle_4" id="cs355_A0_Rectangle_4_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="cs355_A0_Rectangle_4_pattern.png" xlink:href="cs355_A0_Rectangle_4_pattern.png"></image>
+				</pattern>
+				<rect id="cs355" rx="0" ry="0" x="0" y="0" width="640" height="370">
+				</rect>
+			</svg>
+		</div>
+		<div id="Group_3">
+			<svg class="search_A0_Path_3" viewBox="0 0 640 370">
+				<path id="search_A0_Path_3" d="M 0 1 L 640 0 L 640 370 L 0 370 L 0 1 Z">
+				</path>
+			</svg>
+			<svg class="search_A0_Rectangle_5">
+				<pattern elementId="search_A0_Rectangle_6" id="search_A0_Rectangle_6_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="search_A0_Rectangle_6_pattern.png" xlink:href="search_A0_Rectangle_6_pattern.png"></image>
+				</pattern>
+				<rect id="search_A0_Rectangle_5" rx="0" ry="0" x="0" y="0" width="640" height="370">
+				</rect>
+			</svg>
+		</div>
+	<div id="projects" name="projects">
 	</div>
-	<div id="Group_3">
-		<svg class="search_A0_Path_3" viewBox="0 0 640 370">
-			<path id="search_A0_Path_3" d="M 0 1 L 640 0 L 640 370 L 0 370 L 0 1 Z">
-			</path>
-		</svg>
-		<svg class="search_A0_Rectangle_5">
-			<pattern elementId="search_A0_Rectangle_6" id="search_A0_Rectangle_6_pattern" x="0" y="0" width="100%" height="100%">
-				<image x="0" y="0" width="100%" height="100%" href="search_A0_Rectangle_6_pattern.png" xlink:href="search_A0_Rectangle_6_pattern.png"></image>
-			</pattern>
-			<rect id="search_A0_Rectangle_5" rx="0" ry="0" x="0" y="0" width="640" height="370">
-			</rect>
-		</svg>
-	</div>
-	<svg class="Ellipse_2_A0_Ellipse_8">
-		<ellipse id="Ellipse_2_A0_Ellipse_8" rx="190" ry="190" cx="190" cy="190">
-		</ellipse>
-	</svg>
-	<div id="About_Me">
-		<span>About Me</span>
-	</div>
-	<div id="About_Me_Info">
-		<span>Stelios Phanartzis</span><span style="color:rgba(143,158,165,1);"> is a Support Desk Technician with 4 years of experience in domain management, network administration, and full stack web development. Stelios’ interests are in privacy and security, full stack web applications, and natural language processing. He is currently completing his BS in computer science at Queens College.</span>
-	</div>
-	<svg class="Portrait-Template" id="Portrait-2">
-		<pattern elementId="NoPath___Copy__3__A0_Ellipse_10" id="NoPath___Copy__3__A0_Ellipse_10_pattern" x="0" y="0" width="100%" height="100%">
-			<image x="0" y="0" width="100%" height="100%" href="NoPath___Copy__3__A0_Ellipse_10_pattern.png" xlink:href="NoPath___Copy__3__A0_Ellipse_10_pattern.png"></image>
-		</pattern>
-		<ellipse id="" rx="190" ry="190" cx="190" cy="190">
-		</ellipse>
-	</svg>
 </div>
+<script type="text/javascript">
+$('#about').click(function(e) {
+    e.preventDefault();
+});
+function goto($hashtag){
+	location.hash = '';
+    document.location = "index.html#" + $hashtag;
+    window.scrollTo(0,$('#' + $hashtag).offset().top)
+    console.log($hashtag)
+}
+</script>
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>

@@ -1,13 +1,70 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Montserrat;
+	font-family: Montserrat, sans-serif;
 }
 :root {
 	--web-view-ids: Main;
+	--accent: rgba(2,123,255,1);
+}
+nav a {
+	text-decoration: none;
+}
+*{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 .Ellipse-Template {
 	border: 0;
+}
+#logo, .hover, .navOption, nav{
+	display: inline-flex;
+	color: black;
+}
+nav{
+	font-size:0.9em;
+	padding: 0.25em 0 1.75em 0;
+	position: fixed;
+	height: 3em;
+	width: 100%;
+	z-index: 1000;
+	background-image: linear-gradient(0deg, rgba(55,55,55,0), white);
+}
+#logo{
+	font-size:2em;
+	padding: 0.5em 0.5em;
+	margin: 0 1em;
+	border: solid 1px black;
+	border-radius: 80%;
+}
+.navOption{
+	width: 6em;
+	padding: 1em;	
+}
+.hover{
+	width:0;
+	margin-right: 100%;
+	opacity:0.75;
+	white-space: nowrap;
+	overflow: visible;
+	transition: 0.4s ease-in;
+	background-image:linear-gradient(0deg,var(--accent) 2px,rgba(0,0,0,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
+}
+#logo:hover{
+	box-shadow: 0px 0px 0.2em #888;
+}
+.navOption:hover .hover{
+	margin-right: 0%;
+	opacity:1;
+	width: 6em;
+}
+#logo:hover, .navOption:hover .hover{
+	color: var(--accent);
+	border-color: var(--accent);
+	transition: 0.4s ease-in;
+}
+.hovLeft{
+	margin-right: -1em;
 }
 #Main * {
 	margin: 0;
@@ -139,48 +196,6 @@ body {
 	shape-rendering: auto;
 }
 .Ellipse_4 {
-	position: absolute;
-	overflow: visible;
-	width: 18px;
-	height: 18px;
-	left: 0px;
-	top: 22px;
-}
-#Group_2_A0_Group_2 {
-	position: absolute;
-	width: 18px;
-	height: 40px;
-	left: 951px;
-	top: 3130px;
-	overflow: visible;
-}
-#Ellipse_3_A0_Ellipse_6 {
-	fill: rgba(255,255,255,1);
-	stroke: rgb(228, 235, 239);
-	stroke-width: 5px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.Ellipse_3_A0_Ellipse_6 {
-	position: absolute;
-	overflow: visible;
-	width: 10px;
-	height: 10px;
-	left: 4px;
-	top: 0px;
-}
-#Ellipse_4_A0_Ellipse_7 {
-	fill: rgba(255,255,255,1);
-	stroke: rgb(228, 235, 239);
-	stroke-width: 5px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.Ellipse_4_A0_Ellipse_7 {
 	position: absolute;
 	overflow: visible;
 	width: 18px;
