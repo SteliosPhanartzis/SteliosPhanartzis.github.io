@@ -101,7 +101,7 @@ nav{
 }
 #Name {
 	position: absolute;
-	top: 258px;
+	top: 208px;
 	overflow: visible;
 	width: 632px;
 	white-space: nowrap;
@@ -113,7 +113,7 @@ nav{
 }
 #Greeting {
 	position: absolute;
-	top: 354px;
+	top: 304px;
 	overflow: hidden;
 	width: 648px;
 	height: 85px;
@@ -127,7 +127,7 @@ nav{
 }
 #Skills {
 	position: absolute;
-	top: 479px;
+	top: 429px;
 	overflow: hidden;
 	width: 347px;
 	height: 310px;
@@ -208,7 +208,7 @@ nav{
 	width: 670px;
 	height: 400px;
 	left: 300px;
-	top: 2660px;
+	top: 2760px;
 	overflow: visible;
 }
 #search {
@@ -245,7 +245,7 @@ nav{
 	width: 670px;
 	height: 400px;
 	left: 1000px;
-	top: 2400px;
+	top: 2500px;
 	overflow: visible;
 }
 #search_A0_Path_2 {
@@ -282,7 +282,7 @@ nav{
 	width: 670px;
 	height: 400px;
 	left: 0;
-	top: 2150px;
+	top: 2250px;
 	overflow: visible;
 }
 #search_A0_Path_3 {
@@ -325,9 +325,22 @@ nav{
 	left: 72%;
 	top: 1308px;
 }
+#Projects {
+	position: absolute;
+	top: 2150px;
+	overflow: visible;
+	width: 349px;
+	white-space: nowrap;
+	text-align: left;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 55px;
+	color: rgba(23,25,26,1);
+}
 #About_Me {
 	position: absolute;
-	top: 1308px;
+	top: 1108px;
+	padding-top: 200px;
 	overflow: visible;
 	width: 349px;
 	white-space: nowrap;
@@ -339,7 +352,8 @@ nav{
 }
 #About_Me_Info {
 	position: absolute;
-	top: 1404px;
+	top: 1204px;
+	padding-top: 200px;
 	overflow: hidden;
 	width: 648px;
 	height: 416px;

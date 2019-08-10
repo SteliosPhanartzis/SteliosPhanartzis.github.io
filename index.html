@@ -10,9 +10,9 @@
 </head>
 <body>
 <nav>
-	<a href='#landing' onclick="window.scrollTo(0,$('#landing').offset().top)"><span id="logo">SP</span></a>
-	<div class="navOption"><a href="#about" onclick="goto('about')"><div class="hover">About Me</div></a></div>
-	<div class="navOption"><a href="#projects"><div class="hover hovLeft">Work</div></a></div>
+	<a href='#landing'><span id="logo">SP</span></a>
+	<div class="navOption"><a href="#About_Me"><div class="hover">About Me</div></a></div>
+	<div class="navOption"><a href="#Projects"><div class="hover hovLeft">Work</div></a></div>
 </nav>
 <div id="Main">
 	<!-- Landing -->
@@ -20,7 +20,7 @@
 			<ellipse id="Ellipse_2" rx="190" ry="190" cx="190" cy="190">
 			</ellipse>
 		</svg>
-		<section id="landing" name="greeting">
+		<section id="landing" name="landing">
 			<div id="Name">
 				<span>Stelios Phanartzis</span>
 			</div>
@@ -49,11 +49,9 @@
 			</svg>
 		</div>
 <!-- About -->
-	<section id="about" name="about">
 		<div id="About_Me">
 			<span>About Me</span>
 		</div>
-	</section>
 		<svg class="Ellipse_2_A0_Ellipse_8">
 			<ellipse id="Ellipse_2_A0_Ellipse_8" rx="190" ry="190" cx="190" cy="190">
 			</ellipse>
@@ -69,8 +67,9 @@
 			</ellipse>
 		</svg>
 <!-- Projects -->
-<!-- 	<div id="projects" name="projects">
-	</div> -->
+	<div id="Projects" name="Projects">
+		
+	</div>
 		<div id="Group_4">
 			<svg class="search" viewBox="0 0 640 370">
 				<path id="search" d="M 0 1 L 640 0 L 640 370 L 0 370 L 0 1 Z">
@@ -110,20 +109,7 @@
 				</rect>
 			</svg>
 		</div>
-	<div id="projects" name="projects">
-	</div>
 </div>
-<script type="text/javascript">
-$('#about').click(function(e) {
-    e.preventDefault();
-});
-function goto($hashtag){
-	location.hash = '';
-    document.location = "index.html#" + $hashtag;
-    window.scrollTo(0,$('#' + $hashtag).offset().top)
-    console.log($hashtag)
-}
-</script>
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
