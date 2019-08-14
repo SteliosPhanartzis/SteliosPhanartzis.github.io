@@ -21,11 +21,12 @@ html {
 	font-weight: 100;
 }
 body {
-	width: 60%;
+	width: 70%;
 	margin: 0 auto;
 }
 .blue {
 	color: rgba(2,123,255,1);
+	text-decoration: none;
 }
 h1 {
 	font-size: 40px;
@@ -145,6 +146,10 @@ ul{
 	margin: top 30px;
 	line-height: 30px;
 }
+.pic{
+	height: 300px;
+	width: auto;
+}
 .picAccent{
 	height: 300px;
 	width: 300px;
@@ -188,7 +193,7 @@ ul{
 	text-decoration: none;
 }
 /*--Footer--*/
-.footer{
+#footer{
 	display: inline-grid;
 	width: 100%;
 	text-align: center;
@@ -218,5 +223,28 @@ ul{
 	.navGroup{
 		flex: none;
 		justify-content: space-between;
+	}
+}
+@media (max-width: 600px){
+	h1{
+		font-size: 30px;
+	}
+	p{
+		font-size: 15px;
+	}
+	.nav{
+		font-size:0.7em;
+	}
+	.pic{
+		height: 200px;
+		margin-top: -200px;
+		margin-left: -150px;
+	}
+	.picAccent{
+		height: 200px;
+		width: 200px;
+		margin: -175px 75px 0 -75px;
+		background-color: rgba(2,123,255,1);
+		border-radius: 80%;
 	}
 }
