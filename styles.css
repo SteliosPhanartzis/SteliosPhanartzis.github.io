@@ -137,6 +137,9 @@ p {
 	margin-top: 4em;
 	width: 50%;
 }
+.contentL p a:hover{
+	text-decoration: underline; 
+}
 .contentFull{
 	margin-top: 4em;
 }
