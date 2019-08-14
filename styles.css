@@ -163,8 +163,8 @@ ul{
 
 /*--Projects--*/
 .workPic{
-	height: 15em;
-	margin: 0 2em;
+	height: 14vh;
+	margin: 2em 2em;
 	width: auto;
 	box-shadow: 2em 2em rgba(228,235,239,1);
 }
@@ -180,17 +180,19 @@ ul{
 }
 .showcase{
 	padding: 5em 0;
+	text-align: center;
+	justify-content: center;
 }
 .showcase a{
 	text-decoration: none;
-}/*--Footer--*/
+}
+/*--Footer--*/
 .footer{
 	display: inline-grid;
 	width: 100%;
 	text-align: center;
 	justify-content: center;
 	margin-top: 40px;
-	padding-top: 7.5em;
 	padding-bottom: 1em;
 }
 .footerIcons a img{
