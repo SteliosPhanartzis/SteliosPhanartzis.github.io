@@ -112,7 +112,7 @@ p {
 #logo{
 	font-size:2em;
 	padding: 0.5em 0.5em;
-	margin: 0 1em;
+	margin: 0 1em 0 0;
 	border: solid 1px black;
 	border-radius: 80%;
 }
@@ -179,11 +179,10 @@ ul{
 	background-color: rgba(2,123,255,1);
 }
 .showcase{
-	display: inline-block;
 	padding: 5em 0;
 	margin: 0 auto;
 	text-align: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 .showcase a{
 	text-decoration: none;
