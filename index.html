@@ -1,115 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8"/>
-<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"/> -->
-<title>Portfolio</title>
-<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="styles.css"/>
-<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Stelios Phanartzis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav>
-	<a href='#landing'><span id="logo">SP</span></a>
-	<div class="navOption"><a href="#About_Me"><div class="hover">About Me</div></a></div>
-	<div class="navOption"><a href="#Projects"><div class="hover hovLeft">Work</div></a></div>
-</nav>
-<div id="Main">
-	<!-- Landing -->
-		<svg class="Ellipse_2">
-			<ellipse id="Ellipse_2" rx="190" ry="190" cx="190" cy="190">
-			</ellipse>
-		</svg>
-		<section id="landing" name="landing">
-			<div id="Name">
-				<span>Stelios Phanartzis</span>
-			</div>
-		</section>
-		<div id="Greeting">
-			<span>Hello, my name is Stelios Phanartzis. I am a Full Stack Web Developer &</span><span style="color:rgba(2,123,255,1);"> IT Specialist.</span>
+	<div class="nav">
+		<div class="navGroup">
+			<a href='#landing'><span id="logo">SP</span></a>
+			<div class="navOption"><a href="#about"><div class="hover">About Me</div></a></div>
+			<div class="navOption"><a href="#projects"><div class="hover hovLeft">Work</div></a></div>
 		</div>
-		<div id="Skills">
-			<span>Front-end<br/>Back-end<br/>Core Development<br/>Support Desk<br/>System Administration</span>
+		<div class="navGroup navIcons">
+			<a href="#"><img src="github.svg" alt="Github logo"></a>
+			<a href="#"><img src="linkedin.svg" alt="LinkedIn logo"></a>
 		</div>
-		<svg class="Portrait-Template" id="Portrait-1">
-			<pattern elementId="NoPath_A0_Ellipse_3" id="NoPath_A0_Ellipse_3_pattern" x="0" y="0" width="100%" height="100%">
-				<image x="0" y="0" width="100%" height="100%" href="NoPath_A0_Ellipse_3_pattern.png" xlink:href="NoPath_A0_Ellipse_3_pattern.png"></image>
-			</pattern>
-			<ellipse class="Ellipse-Template" rx="190" ry="190" cx="190" cy="190">
-			</ellipse>
-		</svg>
-		<div id="Group_2">
-			<svg class="Ellipse_3">
-				<ellipse id="Ellipse_3" rx="5" ry="5" cx="5" cy="5">
-				</ellipse>
-			</svg>
-			<svg class="Ellipse_4">
-				<ellipse id="Ellipse_4" rx="9" ry="9" cx="9" cy="9">
-				</ellipse>
-			</svg>
-		</div>
-<!-- About -->
-		<div id="About_Me">
-			<span>About Me</span>
-		</div>
-		<svg class="Ellipse_2_A0_Ellipse_8">
-			<ellipse id="Ellipse_2_A0_Ellipse_8" rx="190" ry="190" cx="190" cy="190">
-			</ellipse>
-		</svg>
-		<div id="About_Me_Info">
-			<span>Stelios Phanartzis</span><span style="color:rgba(143,158,165,1);"> is a Support Desk Technician with 4 years of experience in domain management, network administration, and full stack web development. Stelios’ interests are in privacy and security, full stack web applications, and natural language processing. He is currently completing his BS in computer science at Queens College.</span>
-		</div>
-		<svg class="Portrait-Template" id="Portrait-2">
-			<pattern elementId="NoPath___Copy__3__A0_Ellipse_10" id="NoPath___Copy__3__A0_Ellipse_10_pattern" x="0" y="0" width="100%" height="100%">
-				<image x="0" y="0" width="100%" height="100%" href="NoPath___Copy__3__A0_Ellipse_10_pattern.png" xlink:href="NoPath___Copy__3__A0_Ellipse_10_pattern.png"></image>
-			</pattern>
-			<ellipse id="" rx="190" ry="190" cx="190" cy="190">
-			</ellipse>
-		</svg>
-<!-- Projects -->
-	<div id="Projects" name="Projects">
-		
 	</div>
-		<div id="Group_4">
-			<svg class="search" viewBox="0 0 640 370">
-				<path id="search" d="M 0 1 L 640 0 L 640 370 L 0 370 L 0 1 Z">
-				</path>
-			</svg>
-			<svg class="reco">
-				<pattern elementId="reco_A0_Rectangle_2" id="reco_A0_Rectangle_2_pattern" x="0" y="0" width="100%" height="100%">
-					<image x="0" y="0" width="100%" height="100%" href="reco_A0_Rectangle_2_pattern.png" xlink:href="reco_A0_Rectangle_2_pattern.png"></image>
-				</pattern>
-				<rect id="reco" rx="0" ry="0" x="0" y="0" width="640" height="370">
-				</rect>
-			</svg>
+
+	<div id="landing">
+		<div class="contentWrapper">
+			<div class="contentL">
+				<h1>Stelios Phanartzis</h1>
+				<p>Hello, my name is Stelios Phanartzis.<br>
+					I am a <span class="blue">Full Stack Web Developer &amp; IT Specialist.</span></p>
+				<ul>
+					<li><p>Front-end</p></li>
+					<li><p>Back-end</p></li>
+					<li><p>Core Development</p></li>
+					<li><p>Support Desk</p></li>
+					<li><p>System Administration</p></li>
+				</ul>
+			</div>
+			<div class="landingR">
+				<img src="profile@2x.png" alt="Stelios Phanartzis Profile Pic" width="300px">
+				<div class="picAccent"></div>
+			</div>
 		</div>
-		<div id="Group_5">
-			<svg class="search_A0_Path_2" viewBox="0 0 640 370">
-				<path id="search_A0_Path_2" d="M 0 1 L 640 0 L 640 370 L 0 370 L 0 1 Z">
-				</path>
-			</svg>
-			<svg class="cs355">
-				<pattern elementId="cs355_A0_Rectangle_4" id="cs355_A0_Rectangle_4_pattern" x="0" y="0" width="100%" height="100%">
-					<image x="0" y="0" width="100%" height="100%" href="cs355_A0_Rectangle_4_pattern.png" xlink:href="cs355_A0_Rectangle_4_pattern.png"></image>
-				</pattern>
-				<rect id="cs355" rx="0" ry="0" x="0" y="0" width="640" height="370">
-				</rect>
-			</svg>
+	</div>
+	<div id="about">
+		<div class="contentWrapper">
+			<div class="contentL">
+				<div>
+					<h1>About Me</h1>
+				</div>
+				<p><span class="blue">Stelios Phanartzis</span> is a Support Desk Technician 
+					with 4 years of experience in domain management, 
+					network administration, and full stack web development. 
+					Stelios’ interests are in privacy and security, full stack 
+					web applications, and natural language processing. He is 
+					currently completing his BS in computer science at Queens College.</p>
+			</div>
+			<div class="aboutR">
+				<img src="presentation@2x.png" alt="Stelios Phanartzis Pic" width="300px">
+				<div class="picAccent"></div>
+			</div>
 		</div>
-		<div id="Group_3">
-			<svg class="search_A0_Path_3" viewBox="0 0 640 370">
-				<path id="search_A0_Path_3" d="M 0 1 L 640 0 L 640 370 L 0 370 L 0 1 Z">
-				</path>
-			</svg>
-			<svg class="search_A0_Rectangle_5">
-				<pattern elementId="search_A0_Rectangle_6" id="search_A0_Rectangle_6_pattern" x="0" y="0" width="100%" height="100%">
-					<image x="0" y="0" width="100%" height="100%" href="search_A0_Rectangle_6_pattern.png" xlink:href="search_A0_Rectangle_6_pattern.png"></image>
-				</pattern>
-				<rect id="search_A0_Rectangle_5" rx="0" ry="0" x="0" y="0" width="640" height="370">
-				</rect>
-			</svg>
+	</div>
+	<div id="projects">
+		<div class="contentWrapper">
+			<div class="contentFull">
+				<div>
+					<h1>Projects</h1>
+				</div>
+				<div class="showcase">
+					<span>
+						<a href="https://ask-lawrence.herokuapp.com/">
+							<img class="workPic" src="search@2x.png">
+						</a>
+					</span>
+					<span>
+						<a href="https://github.com/SteliosPhanartzis/Reco">
+							<img class="workPic" src="reco@2x.png">
+						</a>
+					</span>
+					<span>
+						<a href="https://venus.cs.qc.cuny.edu/~phst7617/cs355/">
+							<img class="workPic" src="cs355@2x.png">
+						</a>
+					</span>
+				</div>
+			</div>
 		</div>
-</div>
-<script type="text/javascript" src="index.js"></script>
+	</div>
+	<div class="footer">
+		<div class="footerIcons">
+			<a href="mailto:stelios.phan@gmail.com"><img src="mail.svg"></a>
+			<a href="https://drive.google.com/open?id=13aNMBHxouQ3Tdxwan0pJyb6Hv01O4TYnrAOA0--OVPY"><img src="resume.svg"></a>
+		</div>
+		<span>© 2019 Stelios Phanartzis</span>
+	</div>
+
 </body>
 </html>

@@ -1,45 +1,95 @@
-body {
+/*--Global--*/
+* {
 	margin: 0;
 	padding: 0;
-	font-family: Montserrat, sans-serif;
+	border: 0;
+	outline: 0;
+	/*font-size: 100%;*/
+	vertical-align: baseline;
+	background: transparent;
 }
 :root {
 	--web-view-ids: Main;
-	--accent: rgba(2,123,255,1);
 }
-nav a {
-	text-decoration: none;
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
 }
-*{
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+html {
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 100;
 }
-.Ellipse-Template {
-	border: 0;
+body {
+	width: 60%;
+	margin: 0 auto;
 }
-#logo, .hover, .navOption, nav{
+.blue {
+	color: rgba(2,123,255,1);
+}
+h1 {
+	font-size: 40px;
+	font-weight: 400;
+	color: #17191A;
+}
+h2 {
+	font-size: 35px;
+	font-weight: 400;
+	color: #17191A;
+}
+h5 {
+	font-size: 20px;
+	margin-top: 10px;
+	color: #17191A;
+}
+p {
+	color: #8F9EA5;
+	opacity: 0.8;
+	font-weight: 100;
+	margin-top: 10px;
+	font-size: 20px;
+}
+/*--Navigation--*/
+#logo, .hover, .navOption, .nav{
 	display: inline-flex;
 	color: black;
 }
-nav{
+.nav{
 	font-size:0.9em;
-	padding: 0.25em 0 1.75em 0;
+	padding: 1.5em 0 1.75em 0;
+	display: flex;
 	position: fixed;
+	align-items: center;
 	height: 3em;
 	width: 100%;
 	z-index: 1000;
 	background-image: linear-gradient(0deg, rgba(55,55,55,0), white);
+	margin-top: 0;
+	top: 0;
+	/*padding-top: 1em;*/
 }
-#logo{
-	font-size:2em;
-	padding: 0.5em 0.5em;
-	margin: 0 1em;
-	border: solid 1px black;
-	border-radius: 80%;
+.nav a {
+	text-decoration: none;
 }
 .navOption{
 	width: 6em;
-	padding: 1em;	
+	padding: 1.5em;	
+}
+.navGroup{
+	flex: 1;
+	justify-content: space-between;
+}
+.navIcons a{
+	text-align: right;
+	margin-left: 40px;
+}
+.navIcons a img {
+	height: 30px;
+	width: auto;
+}
+.navIcons {
+	display: inline-block;
+	vertical-align: middle;
 }
 .hover{
 	width:0;
@@ -48,365 +98,121 @@ nav{
 	white-space: nowrap;
 	overflow: visible;
 	transition: 0.4s ease-in;
-	background-image:linear-gradient(0deg,var(--accent) 2px,rgba(0,0,0,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
-}
-#logo:hover{
-	box-shadow: 0px 0px 0.2em #888;
+	background-image:linear-gradient(0deg,rgba(2,123,255,1) 2px,rgba(0,0,0,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
 }
 .navOption:hover .hover{
 	margin-right: 0%;
 	opacity:1;
 	width: 6em;
-}
-#logo:hover, .navOption:hover .hover{
-	color: var(--accent);
-	border-color: var(--accent);
-	transition: 0.4s ease-in;
+	transition: 0.3s ease-in;
 }
 .hovLeft{
 	margin-right: -1em;
 }
-#Main * {
-	margin: 0;
-	padding: 0;
+#logo{
+	font-size:2em;
+	padding: 0.5em 0.5em;
+	margin: 0 1em;
+	border: solid 1px black;
+	border-radius: 80%;
 }
-#Main {
-	position: absolute;
-	box-sizing: border-box;
-	background: #E5E5E5;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(255,255,255,1);
-	margin: 0;
-	padding: 0 10%;
-	--web-view-name: Main;
-	--web-view-id: Main;
-	--web-enable-deep-linking: true;
-	overflow-x: hidden;
-    overflow-y: scroll;
+#logo:hover{
+	box-shadow: 0px 0px 0.2em #888;
+	transition: 0.2s ease-in;
 }
-#Main::-webkit-scrollbar{
-	width: 0;
-}
-#Ellipse_2 {
-	fill: rgba(2,123,255,1);
-}
-.Ellipse_2 {
-	position: absolute;
-	overflow: visible;
-	width: 380px;
-	height: 380px;
-	left: 72%;
-	top: 258px;
-}
-#Name {
-	position: absolute;
-	top: 208px;
-	overflow: visible;
-	width: 632px;
-	white-space: nowrap;
-	text-align: left;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 55px;
-	color: rgba(23,25,26,1);
-}
-#Greeting {
-	position: absolute;
-	top: 304px;
-	overflow: hidden;
-	width: 648px;
-	height: 85px;
-	line-height: 45px;
-	margin-top: -7.5px;
-	text-align: left;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 25px;
-	color: rgba(143,158,165,1);
-}
-#Skills {
-	position: absolute;
-	top: 429px;
-	overflow: hidden;
-	width: 347px;
-	height: 310px;
-	line-height: 60px;
-	margin-top: -15px;
-	text-align: left;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 25px;
-	color: rgba(143,158,165,1);
-}
-#Portrait-1 {
-	fill: url(#NoPath_A0_Ellipse_3_pattern);
-	top: 205px;
-	left: 70%;
-}
-#Portrait-2 {
-	fill: url(#NoPath___Copy__3__A0_Ellipse_10_pattern);
-	top: 1311.5px;
-	left: 70%;
-}
-.Portrait-Template {
-	width: 400px;
-	height: 400px;
-	position: absolute;
-	overflow: visible;
-	stroke: rgb(255, 255, 255);
-	stroke-width: 10px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-#Group_2 {
-	position: absolute;
-	width: 18px;
-	height: 40px;
-	left: 49%;
-	top: 56em;
-	overflow: visible;
-}
-#Ellipse_3 {
-	fill: rgba(255,255,255,1);
-	stroke: rgb(228, 235, 239);
-	stroke-width: 5px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.Ellipse_3 {
-	position: absolute;
-	overflow: visible;
-	width: 10px;
-	height: 10px;
-	left: 4px;
-	top: 0px;
-}
-#Ellipse_4 {
-	fill: rgba(255,255,255,1);
-	stroke: rgb(228, 235, 239);
-	stroke-width: 5px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.Ellipse_4 {
-	position: absolute;
-	overflow: visible;
-	width: 18px;
-	height: 18px;
-	left: 0px;
-	top: 22px;
-}
-#Group_4 {
-	position: absolute;
-	width: 670px;
-	height: 400px;
-	left: 300px;
-	top: 2760px;
-	overflow: visible;
-}
-#search {
-	fill: rgba(228,235,239,1);
-}
-.search {
-	transform: matrix(1,0,0,1,0,0);
-	overflow: visible;
-	position: absolute;
-	top: 30px;
-	left: 30px;
-	width: 640px;
-	height: 370px;
-}
-#reco {
-	fill: url(#reco_A0_Rectangle_2_pattern);
-	stroke: rgb(255, 255, 255);
-	stroke-width: 5px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.reco {
-	position: absolute;
-	overflow: visible;
-	width: 640px;
-	height: 370px;
-	left: 0px;
-	top: 0px;
-}
-#Group_5 {
-	position: absolute;
-	width: 670px;
-	height: 400px;
-	left: 1000px;
-	top: 2500px;
-	overflow: visible;
-}
-#search_A0_Path_2 {
-	fill: rgba(228,235,239,1);
-}
-.search_A0_Path_2 {
-	transform: matrix(1,0,0,1,0,0);
-	overflow: visible;
-	position: absolute;
-	top: 30px;
-	left: 30px;
-	width: 640px;
-	height: 370px;
-}
-#cs355 {
-	fill: url(#cs355_A0_Rectangle_4_pattern);
-	stroke: rgb(255, 255, 255);
-	stroke-width: 5px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.cs355 {
-	position: absolute;
-	overflow: visible;
-	width: 640px;
-	height: 370px;
-	left: 0px;
-	top: 0px;
-}
-#Group_3 {
-	position: absolute;
-	width: 670px;
-	height: 400px;
-	left: 0;
-	top: 2250px;
-	overflow: visible;
-}
-#search_A0_Path_3 {
-	fill: rgba(228,235,239,1);
-}
-.search_A0_Path_3 {
-	transform: matrix(1,0,0,1,0,0);
-	overflow: visible;
-	position: absolute;
-	top: 30px;
-	left: 30px;
-	width: 640px;
-	height: 370px;
-}
-#search_A0_Rectangle_5 {
-	fill: url(#search_A0_Rectangle_6_pattern);
-	stroke: rgb(255, 255, 255);
-	stroke-width: 5px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.search_A0_Rectangle_5 {
-	position: absolute;
-	overflow: visible;
-	width: 640px;
-	height: 370px;
-	left: 0px;
-	top: 0px;
-}
-#Ellipse_2_A0_Ellipse_8 {
-	fill: rgba(2,123,255,1);
-}
-.Ellipse_2_A0_Ellipse_8 {
-	position: absolute;
-	overflow: visible;
-	width: 380px;
-	height: 380px;
-	left: 72%;
-	top: 1364.5px;
-}
-#Projects {
-	position: absolute;
-	top: 2150px;
-	overflow: visible;
-	width: 349px;
-	white-space: nowrap;
-	text-align: left;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 55px;
-	color: rgba(23,25,26,1);
-}
-#About_Me {
-	position: absolute;
-	top: 1108px;
-	padding-top: 200px;
-	overflow: visible;
-	width: 349px;
-	white-space: nowrap;
-	text-align: left;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 55px;
-	color: rgba(23,25,26,1);
-}
-#About_Me_Info {
-	position: absolute;
-	top: 1204px;
-	padding-top: 200px;
-	overflow: hidden;
-	width: 648px;
-	height: 416px;
-	line-height: 45px;
-	margin-top: -7.5px;
-	text-align: left;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 25px;
+#logo:hover, .navOption:hover .hover {
 	color: rgba(2,123,255,1);
+	border-color: rgba(2,123,255,1);
 }
-@media (max-width: 1079px){
-/*	#Portrait-1 {
-		fill: url(#NoPath_A0_Ellipse_3_pattern);
-		top: 205px;
-		left: 75%;
+/*--General Content--*/
+.contentWrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	padding-top: 25em;
+	padding-bottom: 10em;
+}
+.contentL{
+	margin-top: 4em;
+	width: 50%;
+}
+.contentFull{
+	margin-top: 4em;
+}
+/*--Landing--*/
+ul{
+	list-style: none;
+	margin: top 30px;
+	line-height: 30px;
+}
+.picAccent{
+	height: 300px;
+	width: 300px;
+	margin: -250px 0 0 50px;
+	background-color: rgba(2,123,255,1);
+	border-radius: 80%;
+}
+.scroll {
+	position: absolute;
+	bottom: 180px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+/*--About Me--*/
+
+/*--Projects--*/
+.workPic{
+	height: 15em;
+	margin: 0 2em;
+	width: auto;
+	box-shadow: 2em 2em rgba(228,235,239,1);
+}
+.workPic:hover{
+	box-shadow: 2em 2em rgba(2,123,255,1);
+	transition: ease-in 0.3s;
+}
+.workPicAccent{
+	height: 15em;
+	width: 31em;
+	margin: -250px 0 0 50px;
+	background-color: rgba(2,123,255,1);
+}
+.showcase{
+	padding: 5em 0;
+}
+.showcase a{
+	text-decoration: none;
+}/*--Footer--*/
+.footer{
+	display: inline-grid;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	margin-top: 40px;
+	padding-top: 7.5em;
+	padding-bottom: 1em;
+}
+.footerIcons a img{
+	height: 50px;
+	width: auto;
+	padding: 0 0.5em;
+}
+/*--Mobile--*/
+@media (max-aspect-ratio: 3/4){
+	body {
+		width: 90%;
+		margin: auto;
 	}
-	#Portrait-2 {
-		fill: url(#NoPath___Copy__3__A0_Ellipse_10_pattern);
-		top: 1255px;
-		left: 75%;
+	.navIcons a{
+		text-align: right;
 	}
-	.Portrait-Template {
-		width: 300px;
-		height: 300px;
-		position: absolute;
-		overflow: visible;
-		stroke: rgb(255, 255, 255);
-		stroke-width: 10px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
+	.navIcons{
+		text-align: right;
+		padding-right: 100px;
 	}
-	.Ellipse_2 {
-		position: absolute;
-		overflow: visible;
-		width: 280px;
-		height: 280px;
-		left: 77%;
-		top: 258px;
+	.navGroup{
+		flex: none;
+		justify-content: space-between;
 	}
-	.Ellipse_2_A0_Ellipse_8 {
-		position: absolute;
-		overflow: visible;
-		width: 280px;
-		height: 280px;
-		left: 77%;
-		top: 1308px;
-	}*/
-	#About_Me_Info {
-		width: 550px;
-	}
-	#Greeting {
-		width: 550px;
 }
