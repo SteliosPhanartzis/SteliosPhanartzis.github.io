@@ -130,8 +130,8 @@ p {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 0px;
-	padding-top: 25vh;
-	padding-bottom: 10em;
+	padding-top: 22vh;
+	padding-bottom: 20vh;
 }
 .contentL{
 	margin-top: 4em;
@@ -188,7 +188,7 @@ ul{
 }
 .showcase{
 	padding: 5em 0;
-	margin: 0 auto;
+	margin: 0;
 	text-align: center;
 	justify-content: space-between;
 }
