@@ -23,6 +23,7 @@ html {
 body {
 	width: 70%;
 	margin: 0 auto;
+	overflow-x: hidden;
 }
 .blue {
 	color: rgba(2,123,255,1);
@@ -126,6 +127,9 @@ p {
 	border-color: rgba(2,123,255,1);
 }
 /*--General Content--*/
+.section {
+	padding-top: 8vh;
+}
 .contentWrapper {
 	display: flex;
 	justify-content: space-between;
@@ -170,32 +174,73 @@ ul{
 /*--About Me--*/
 
 /*--Projects--*/
-.workPic{
-	height: 14vh;
-	margin: 2em 2em;
-	width: auto;
-	/*Use once pictures are redone*/
-	/*border: 3px solid white;*/
-	box-shadow: 2em 2em rgba(228,235,239,1);
+#work .contentWrapper {
+	padding-top: 2vh;
 }
-.workPic:hover{
-	box-shadow: 2em 2em rgba(2,123,255,1);
-	transition: ease-in 0.3s;
-}
-.workPicAccent{
+.workPicAccent {
 	height: 15em;
 	width: 31em;
 	margin: -250px 0 0 50px;
 	background-color: rgba(2,123,255,1);
 }
-.showcase{
-	padding: 5em 0;
-	margin: 0;
-	text-align: center;
-	justify-content: space-between;
-}
-.showcase a{
+.carousel a{
 	text-decoration: none;
+}
+.carousel-container {
+	width: 60vw;
+	margin: auto;	
+	/*overflow: hidden;*/
+}
+.carousel {
+	position: relative;
+	margin: 0;
+	left: 0;
+	animation: 30s slide_right infinite;
+	animation-play-state: running;
+	/*animation-direction: normal; */
+	display: flex;
+	width: 100%;
+}
+.carousel:hover {
+	animation-play-state: paused;
+	/*animation-direction: reverse;*/
+}
+.carousel a img {
+	width: 60vw;
+	/*Use once pictures are redone*/
+	/*border: 3px solid white;*/
+}
+.carousel a img:hover {
+	transition: ease-in 0.3s;
+}
+@keyframes slide_right {
+	0% {
+		left: -100%;
+	}
+	22% {
+		left: -100%;
+	}
+	25% { 
+		left: -200%;
+	}
+	47% {
+		left: -200%;
+	}
+	50% {
+		left: -300%;
+	}
+	72% {
+		left: -300%;
+	}
+	75% {
+		left: -400%;
+	}
+	97% {
+		left: -400%;
+	}
+	100% {
+		left: -500%;
+	}
 }
 /*--Footer--*/
 #footer{
@@ -231,6 +276,9 @@ ul{
 	}
 }
 @media (max-width: 600px){
+	body{
+		padding-top: +50%;
+	}
 	h1{
 		font-size: 30px;
 	}
@@ -245,7 +293,7 @@ ul{
 		padding: 1.5em;
 	}
 	#logo{
-		font-size:2em;
+		/*font-size:2em;*/
 		padding: 0.5em 0.5em;
 		margin: 0 0.5em 0 0;
 		border: solid 1px black;
