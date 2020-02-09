@@ -30,17 +30,17 @@ body {
 	text-decoration: none;
 }
 h1 {
-	font-size: 40px;
+	font-size: 2.2vw;
 	font-weight: 400;
 	color: #17191A;
 }
 h2 {
-	font-size: 35px;
+	font-size: 2vw;
 	font-weight: 400;
 	color: #17191A;
 }
 h5 {
-	font-size: 20px;
+	font-size: 1.5vw;
 	margin-top: 10px;
 	color: #17191A;
 }
@@ -49,7 +49,7 @@ p {
 	opacity: 0.8;
 	font-weight: 100;
 	margin-top: 10px;
-	font-size: 20px;
+	font-size: 1vw;
 }
 /*--Navigation--*/
 #logo, .hover, .navOption, .nav{
@@ -134,7 +134,7 @@ p {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 0px;
-	padding-top: 22vh;
+	padding-top: 18vh;
 	padding-bottom: 22vh;
 }
 .contentL{
@@ -150,17 +150,17 @@ p {
 /*--Landing--*/
 ul{
 	list-style: none;
-	margin: top 30px;
-	line-height: 30px;
+	margin-top: 2vh;
+	line-height: 5vh;
 }
 .pic{
-	height: 300px;
+	height: 30vh;
 	width: auto;
 }
 .picAccent{
-	height: 300px;
-	width: 300px;
-	margin: -250px 0 0 50px;
+	height: 30vh;
+	width: 30vh;
+	margin: -25vh 0 0 8vh;
 	background-color: rgba(2,123,255,1);
 	border-radius: 80%;
 }
@@ -217,11 +217,16 @@ ul{
 	width: 40vw;
 	padding-left: 10vw;
 	padding-top: 10%;
-	font-size: 1.5vw;
 	display: none;
 }
-.carousel a div div b {
-	font-size: 2vw;
+.carousel a div div p {
+	margin-top: 0;
+	color: black;
+	font-weight: bold;
+}
+.carousel a div div h2 {
+	color: rgb(2,123,255);
+	font-weight: bold;
 }
 .carousel a div:hover div {
 	display: inherit;
@@ -234,7 +239,7 @@ ul{
 .carousel a div img:hover {
 	transition: linear 0.2s;
 	border: 1px solid black;
-	opacity: 10%;
+	opacity: 5%;
 }
 .selector {
 	width: 60vw;
@@ -243,10 +248,10 @@ ul{
 }
 .selector div{
 	border-radius: 10em;
-	height: 1em;
-	width: 1em;
+	height: 0.5vw;
+	width: 0.5vw;
 	border: 1px solid gray;
-	margin: 0.5em;
+	margin: 0.5vh 0.5vw;
 }
 .selector div:active{
 	background-color: lightgray;
@@ -295,15 +300,30 @@ ul{
 	padding-bottom: 1em;
 }
 .footerIcons a img{
-	height: 50px;
+	height: 5vh;
 	width: auto;
-	padding: 0 0.5em;
+	padding: 0 0.5vw;
 }
 /*--Mobile--*/
-@media (max-aspect-ratio: 3/4){
+@media (max-aspect-ratio: 7/8){
 	body {
 		width: 90%;
 		margin: auto;
+	}
+	ul{
+		line-height: 3vh;
+	}
+	h1 {
+		font-size: 3.5vw;
+	}
+	h2 {
+		font-size: 3vw;
+	}
+	h5 {
+		font-size: 2.5vw;
+	}
+	p {
+		font-size: 2vw;
 	}
 	.navIcons a{
 		text-align: right;
@@ -319,13 +339,21 @@ ul{
 }
 @media (max-width: 600px){
 	body{
+		width: 90%;
+		margin: auto;
 		padding-top: +50%;
 	}
-	h1{
-		font-size: 30px;
+	h1 {
+		font-size: 3.5vw;
 	}
-	p{
-		font-size: 15px;
+	h2 {
+		font-size: 3vw;
+	}
+	h5 {
+		font-size: 2.5vw;
+	}
+	p {
+		font-size: 1.8vw;
 	}
 	.nav{
 		font-size:0.7em;
