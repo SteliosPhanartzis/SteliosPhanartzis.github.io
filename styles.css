@@ -222,7 +222,7 @@ ul{
 }
 .carousel a div div p {
 	margin-top: 0;
-	font-size: 2.5vh;
+	font-size: 2.5vw;
 	color: black;
 }
 .carousel a div div h2 {
@@ -324,7 +324,7 @@ ul{
 		font-size: 2.5vw;
 	}
 	p {
-		font-size: 2vw;
+		font-size: 2.5vw;
 	}
 	.navIcons a {
 		text-align: right;
@@ -336,6 +336,17 @@ ul{
 	.navGroup {
 		flex: none;
 		justify-content: space-between;
+	}
+	.pic{
+		height: 20vh;
+		width: auto;
+	}
+	.picAccent{
+		height: 20vh;
+		width: 20vh;
+		margin: -17vh 0 0 5vh;
+		background-color: rgba(2,123,255,1);
+		border-radius: 80%;
 	}
 	#footer {
 		padding-top: 25vh;
