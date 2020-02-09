@@ -191,7 +191,7 @@ ul{
 	padding-top: 2vh;
 	width: 60vw;
 	margin: auto;	
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 .carousel {
 	position: relative;
@@ -213,7 +213,7 @@ ul{
 }
 .carousel a div div {
 	position: absolute;
-        z-index: 0;
+	z-index: 0;
         /*margin: 0 auto;*/
         /*left: 0;*/
         /*right: 0;*/
@@ -252,25 +252,25 @@ ul{
 	0% {
 		left: -100%;
 	}
-	22% {
+	20% {
 		left: -100%;
 	}
 	25% { 
 		left: -200%;
 	}
-	47% {
+	45% {
 		left: -200%;
 	}
 	50% {
 		left: -300%;
 	}
-	72% {
+	70% {
 		left: -300%;
 	}
 	75% {
 		left: -400%;
 	}
-	97% {
+	95% {
 		left: -400%;
 	}
 	100% {
