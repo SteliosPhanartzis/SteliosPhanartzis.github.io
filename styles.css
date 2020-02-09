@@ -128,14 +128,14 @@ p {
 }
 /*--General Content--*/
 .section {
-	padding-top: 8vh;
+	padding-top: 12vh;
 }
 .contentWrapper {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 0px;
 	padding-top: 22vh;
-	padding-bottom: 20vh;
+	padding-bottom: 22vh;
 }
 .contentL{
 	margin-top: 4em;
@@ -175,7 +175,8 @@ ul{
 
 /*--Projects--*/
 #work .contentWrapper {
-	padding-top: 2vh;
+	padding-top: 0vh;
+	justify-content: center;
 }
 .workPicAccent {
 	height: 15em;
@@ -187,6 +188,7 @@ ul{
 	text-decoration: none;
 }
 .carousel-container {
+	padding-top: 2vh;
 	width: 60vw;
 	margin: auto;	
 	/*overflow: hidden;*/
@@ -194,8 +196,8 @@ ul{
 .carousel {
 	position: relative;
 	margin: 0;
-	left: 0;
-	animation: 30s slide_right infinite;
+	left: -15%;
+	animation: 20s slide_right infinite;
 	animation-play-state: running;
 	/*animation-direction: normal; */
 	display: flex;
@@ -205,13 +207,46 @@ ul{
 	animation-play-state: paused;
 	/*animation-direction: reverse;*/
 }
-.carousel a img {
+.carousel a div {
 	width: 60vw;
 	/*Use once pictures are redone*/
-	/*border: 3px solid white;*/
 }
-.carousel a img:hover {
-	transition: ease-in 0.3s;
+.carousel a div div {
+	position: absolute;
+        z-index: 0;
+        /*margin: 0 auto;*/
+        /*left: 0;*/
+        /*right: 0;*/
+        /*top: 40%;*/
+    }
+.carousel a div img {
+	border: 1px solid lightgray;
+	border-radius: 1em;
+	width: 59vw;
+}
+.carousel a div img:hover {
+	transition: linear 0.2s;
+	border: 1px solid black;
+	opacity: 25%;
+}
+.selector {
+	width: 60vw;
+	justify-content: center;
+	display: inline-flex;
+}
+.selector div{
+	border-radius: 10em;
+	height: 1em;
+	width: 1em;
+	border: 1px solid gray;
+	margin: 0.5em;
+}
+.selector div:active{
+	background-color: lightgray;
+	transition: linear 0.2s;
+}
+.highlight {
+	background-color: lightgray;
 }
 @keyframes slide_right {
 	0% {
