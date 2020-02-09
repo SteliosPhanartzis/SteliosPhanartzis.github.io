@@ -214,11 +214,18 @@ ul{
 .carousel a div div {
 	position: absolute;
 	z-index: 0;
-        /*margin: 0 auto;*/
-        /*left: 0;*/
-        /*right: 0;*/
-        /*top: 40%;*/
-    }
+	width: 40vw;
+	padding-left: 10vw;
+	padding-top: 10%;
+	font-size: 1.5vw;
+	display: none;
+}
+.carousel a div div b {
+	font-size: 2vw;
+}
+.carousel a div:hover div {
+	display: inherit;
+}
 .carousel a div img {
 	border: 1px solid lightgray;
 	border-radius: 1em;
@@ -227,7 +234,7 @@ ul{
 .carousel a div img:hover {
 	transition: linear 0.2s;
 	border: 1px solid black;
-	opacity: 25%;
+	opacity: 15%;
 }
 .selector {
 	width: 60vw;
