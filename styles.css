@@ -331,17 +331,6 @@ ul{
 		padding: 1.5em 0 1em 0;
 		height: 2.5em;
 	}
-	.navIcons a {
-		text-align: right;
-	}
-	.navIcons {
-		text-align: right;
-		padding-right: 100px;
-	}
-	.navGroup {
-		flex: none;
-		justify-content: space-between;
-	}
 	.pic{
 		height: 20vh;
 		width: auto;
@@ -354,6 +343,7 @@ ul{
 		border-radius: 80%;
 	}
 	.carousel-container {
+		padding-top: 0;
 		width: 80vw;
 	}
 	.carousel a div {
@@ -366,14 +356,14 @@ ul{
 		width: 79vw;
 	}
 	#footer {
-		padding-top: 25vh;
+		padding-top: 20vh;
 	}
 }
 @media (max-height: 450px) and (min-aspect-ratio: 4/3){
 	.nav{
 		font-size:0.6em;
 		padding: 1.5em 0 1em 0;
-		height: 2.5em;
+		height: 3em;
 	}
 	.navIcons a {
 		text-align: right;
