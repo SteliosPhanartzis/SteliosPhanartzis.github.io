@@ -1,11 +1,17 @@
 const selector = document.querySelectorAll('.selector div');
 const carousel = document.querySelector('.carousel');
+const changeProject = document.querySelector('.change-project');
 const prev = document.querySelector('#left');
 const next = document.querySelector('#right');
 let frame = 0, holdframe = false;
 
 //Listener to reset position
 carousel.addEventListener("transitionend", () => {
+	if(frame < 1){
+		frame = 4;
+		carousel.classList.add("reset-transition");
+		carousel.setAttribute("style", `left: ${-400}%`);
+	}
 	if(frame > 4){
 		frame = 1;
 		carousel.classList.add("reset-transition");
@@ -19,12 +25,7 @@ carousel.addEventListener("mouseover", () => {
 	//Set holdframe flag to true
 	holdframe = true;
 });
-prev.addEventListener("mouseover", () => {
-	console.log("Pause carousel");
-	//Set holdframe flag to true
-	holdframe = true;
-});
-next.addEventListener("mouseover", () => {
+changeProject.addEventListener("mouseover", () => {
 	console.log("Pause carousel");
 	//Set holdframe flag to true
 	holdframe = true;
@@ -36,12 +37,7 @@ carousel.addEventListener("mouseleave", () => {
 	//Set holdframe flag to false
 	holdframe = false;
 });
-prev.addEventListener("mouseleave", () => {
-	console.log("Continue carousel");
-	//Set holdframe flag to false
-	holdframe = false;
-});
-next.addEventListener("mouseleave", () => {
+changeProject.addEventListener("mouseleave", () => {
 	console.log("Continue carousel");
 	//Set holdframe flag to false
 	holdframe = false;
@@ -49,11 +45,12 @@ next.addEventListener("mouseleave", () => {
 
 //Normal carousel functionality
 function slideLeft() {
+	if (carousel.classList.length > 1)
+		carousel.classList = "carousel";
 	if(holdframe)
 		setTimeout("slideLeft()",1000)
 	else {
-		carousel.classList = "carousel";
-		carousel.style.transitionDuration = "0.75s";
+		// carousel.classList = "carousel";
 		selector[(frame+selector.length-1)%selector.length].classList = "";
 		//Add highlight to next selector
 		frame++;
