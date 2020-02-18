@@ -1,17 +1,72 @@
 const selector = document.querySelectorAll('.selector div');
-function shiftSelector() {
-	var project_index = 0;
-	getComputedStyle(document.querySelector('.carousel')).getPropertyValue('transform');
-	//Uses left offset dived by inner window width to get index
-	let vw_ratio = (-1*parseInt(getComputedStyle(document.querySelector('.carousel-container')).getPropertyValue('width'))/parseInt(window.innerWidth));
-	let carousel_offset = (parseInt(getComputedStyle(document.querySelector('.carousel')).getPropertyValue('left'))/parseInt(window.innerWidth) + 0.1);
-	project_index = parseInt(carousel_offset/vw_ratio);
-	//Remove highlight from previous selector
-	if(project_index == selector.length)
-		project_index = 0;
-	selector[(project_index+selector.length-1)%selector.length].classList = "";
-	//Add highlight to next selector
-	selector[project_index].classList = "highlight";
-	setTimeout("shiftSelector()",1000)
+const carousel = document.querySelector('.carousel');
+const prev = document.querySelector('#left');
+const next = document.querySelector('#right');
+let frame = 0, holdframe = false;
+
+//Listener to reset position
+carousel.addEventListener("transitionend", () => {
+	if(frame > 4){
+		frame = 1;
+		carousel.classList.add("reset-transition");
+		carousel.setAttribute("style", `left: ${-100}%`);
+	}
+});
+
+//Pause carousel on hover
+carousel.addEventListener("mouseover", () => {
+	console.log("Pause carousel");
+	//Set holdframe flag to true
+	holdframe = true;
+});
+prev.addEventListener("mouseover", () => {
+	console.log("Pause carousel");
+	//Set holdframe flag to true
+	holdframe = true;
+});
+next.addEventListener("mouseover", () => {
+	console.log("Pause carousel");
+	//Set holdframe flag to true
+	holdframe = true;
+});
+
+//Continue carousel
+carousel.addEventListener("mouseleave", () => {
+	console.log("Continue carousel");
+	//Set holdframe flag to false
+	holdframe = false;
+});
+prev.addEventListener("mouseleave", () => {
+	console.log("Continue carousel");
+	//Set holdframe flag to false
+	holdframe = false;
+});
+next.addEventListener("mouseleave", () => {
+	console.log("Continue carousel");
+	//Set holdframe flag to false
+	holdframe = false;
+});
+
+//Normal carousel functionality
+function slideLeft() {
+	if(holdframe)
+		setTimeout("slideLeft()",1000)
+	else {
+		carousel.classList = "carousel";
+		carousel.style.transitionDuration = "0.75s";
+		selector[(frame+selector.length-1)%selector.length].classList = "";
+		//Add highlight to next selector
+		frame++;
+		selector[(frame+selector.length-1)%selector.length].classList = "highlight";
+		carousel.setAttribute("style", `left: ${-100 * frame}%`);
+		setTimeout("slideLeft()",5000)
+	}
 }
-document.onload = shiftSelector();
+
+function shift_slide(num) {
+	selector[(frame+selector.length-1)%selector.length].classList = "";
+	frame = (frame+selector.length+num)%selector.length;
+	selector[(frame+selector.length-1)%selector.length].classList = "highlight";
+	carousel.setAttribute("style", `left: ${-100*frame}%;`);
+}
+document.onload = slideLeft();

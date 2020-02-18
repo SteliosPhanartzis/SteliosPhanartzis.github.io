@@ -197,15 +197,16 @@ ul{
 .carousel {
 	position: relative;
 	margin: 0;
-	left: -15%;
-	animation: 20s slide_right infinite;
-	animation-play-state: running;
+	left: -100%;
+	transition-duration: 0.75s;
+	/* animation: 20s slide_right infinite; */
+	/* animation-play-state: running; */
 	/*animation-direction: normal; */
 	display: flex;
 	width: 100%;
 }
 .carousel:hover {
-	animation-play-state: paused;
+	/* animation-play-state: paused; */
 	/*animation-direction: reverse;*/
 }
 .carousel a div {
@@ -242,6 +243,9 @@ ul{
 	border: 1px solid black;
 	opacity: 5%;
 }
+.reset-transition{
+	transition-duration: 0s !important;
+}
 .selector {
 	width: 60vw;
 	justify-content: center;
@@ -260,6 +264,34 @@ ul{
 }
 .highlight {
 	background-color: lightgray;
+}
+.change-project {
+	position: absolute;
+	overflow-x: visible;
+	left: 0;
+	text-align: center;
+	/* top: ; */
+	/* justify-content: space-between; */
+	width: 100%;
+}
+.change-project div {
+	display: inline-flex;
+	margin: 0 20vw;
+}
+#right {
+	width: 0; 
+	height: 0; 
+	border-top: 1.5rem solid transparent;
+	border-bottom: 1.5rem solid transparent;
+	border-left: 1.5rem solid gray;
+}
+	
+#left {
+	width: 0; 
+	height: 0;
+	border-top: 1.5rem solid transparent;
+	border-bottom: 1.5rem solid transparent; 
+	border-right: 1.5rem solid gray; 
 }
 @keyframes slide_right {
 	0% {
