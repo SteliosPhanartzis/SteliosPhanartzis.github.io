@@ -25,10 +25,15 @@ carousel.addEventListener("mouseover", () => {
 	//Set holdframe flag to true
 	holdframe = true;
 });
+//Mimic carousel on hover actions
 changeProject.addEventListener("mouseover", () => {
 	console.log("Pause carousel");
 	//Set holdframe flag to true
 	holdframe = true;
+	//Manual mimic hover
+	// currentFrame = carousel.querySelectorAll('a')[frame].querySelector('div');
+	// currentFrame.querySelector('img').classList.add('mimic-hover-carousel');
+	// currentFrame.classList.add('mimic-hover-text')
 });
 
 //Continue carousel
@@ -50,7 +55,6 @@ function slideLeft() {
 	if(holdframe)
 		setTimeout("slideLeft()",1000)
 	else {
-		// carousel.classList = "carousel";
 		selector[(frame+selector.length-1)%selector.length].classList = "";
 		//Add highlight to next selector
 		frame++;
@@ -60,6 +64,7 @@ function slideLeft() {
 	}
 }
 
+//Handles next and prev clicks
 function shift_slide(num) {
 	selector[(frame+selector.length-1)%selector.length].classList = "";
 	frame = (frame+selector.length+num)%selector.length;
