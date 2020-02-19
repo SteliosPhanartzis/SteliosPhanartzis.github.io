@@ -227,7 +227,7 @@ ul{
 	color: rgb(2,123,255);
 	font-weight: bold;
 }
-.carousel a div:hover div {
+.carousel-container:hover > .carousel a div div {
 	display: inherit;
 }
 .carousel a div img {
@@ -235,7 +235,7 @@ ul{
 	border-radius: 1em;
 	width: 59vw;
 }
-.carousel a div img:hover {
+.carousel-container:hover > .carousel a div img {
 	transition: linear 0.2s;
 	border: 1px solid black;
 	opacity: 5%;
