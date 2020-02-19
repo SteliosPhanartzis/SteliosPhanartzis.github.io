@@ -25,15 +25,10 @@ carousel.addEventListener("mouseover", () => {
 	//Set holdframe flag to true
 	holdframe = true;
 });
-//Mimic carousel on hover actions
 changeProject.addEventListener("mouseover", () => {
 	console.log("Pause carousel");
 	//Set holdframe flag to true
 	holdframe = true;
-	//Manual mimic hover
-	// currentFrame = carousel.querySelectorAll('a')[frame].querySelector('div');
-	// currentFrame.querySelector('img').classList.add('mimic-hover-carousel');
-	// currentFrame.classList.add('mimic-hover-text')
 });
 
 //Continue carousel
