@@ -40,7 +40,7 @@ section .content h2 {
 }
 section:nth-child(1) .content h2 {
     text-align: center;
-    background-image: url(bg8.jpg);
+    background-image: url(bg8.JPG);
 }
 section:nth-child(2) .content h2 {
     background-image: url(bg23.jpg);
