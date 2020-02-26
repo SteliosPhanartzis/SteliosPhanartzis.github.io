@@ -1,174 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Stelios Phanartzis</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Stelios Phanartzis Portfolio">
-  	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-  	<meta name="author" content="Stelios Phanartzis">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stelios Phanartzis Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="nav">
+    <section id="intro">
+        <div class="content">
+            <h2>Stelios Phanartzis</h2>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                occaecat cupidatat non proident, sunt in culpa qui officia 
+                deserunt mollit anim id est laborum.
+            </p> -->
+            <!-- <a href="#sand">Read More</a> -->
+        </div>
+    </section>
+    <section id="about">
+        <div class="content">
+            <h2 class="left-align">About</h2>
+            <p class ="left-align">I am a Computer Science major with 4 years of tech 
+                industry experience in Domain Management, System Administration, and 
+                Full-Stack Web Development. My interests are in privacy and security, 
+                full-stack web applications, and data science. I am graduating this semester 
+                with my BS in Computer Science and a minor in Mathematics at Queens College.
+                When I'm not coding, I spend my free time writing and producing music.
+            </p>
+            <!-- <a href="#intro">Read More</a> -->
+        </div>
+        <div class="content top-align">
+            <img class="full-pic" src="./images/me1.jpg"/>
+        </div>
+    </section>
+    <section id="work">
+        <div class="content top-align">
+            <a href="https://www.qc.cuny.edu/Academics/SupportPrograms/advising/Pages/default.aspx"><img class="projects" src="./images/AAC.png"/></a>
+            <a href="https://ask-lawrence.herokuapp.com/"><img class="projects" src="./images/Ask-Lawrence.png"/></a>
+            <a href="https://github.com/SteliosPhanartzis/Reco"><img class="projects" src="./images/Reco.png"/></a>
+            <a href="https://github.com/SteliosPhanartzis/ReminderList"><img class="projects" src="./images/ReminderApp.png"/></a>
+            <a href="https://github.com/SteliosPhanartzis/EHack"><img class="projects" src="./images/Restore.png"/></a>
+            <a href="https://github.com/SteliosPhanartzis/Tip-Calculator"><img class="projects" src="./images/TipCalculator.png"/></a>
+        </div>
+        <div class="content">
+            <h2 class="right-align">Work</h2>
+            <p class="right-align">A collection of projects I have worked on alone or as part of a team. <br/>
+                My career focus has taken a natural progression from service management, to service provisioning, 
+                to server side development, to my current work in full-stack and mobile development.
+            </p>
+            <!-- <a href="#about">Read More</a> -->
+        </div>
+    </section>
+    <section id="contact">
+        <div class="content">
+            <h2 class="left-align">Contact</h2>
+            <p class="left-align"><a href="mailto:stelios.phan@gmail.com">stelios.phan@gmail.com</a>
+            </p>
+            <!-- <a href="#work">Read More</a> -->
+        </div>
+    </section>
+    <div class="nav">
 		<div class="navGroup">
-			<a href='#landing'><span id="logo">SP</span></a>
+            <a href='#intro'><span id="logo">Stelios</span></a>
+            <!-- <div><a href="#intro"><div id="logo" class="hover">Stelios</div></a></div> -->
 			<div class="navOption"><a href="#about"><div class="hover">About</div></a></div>
-			<div class="navOption"><a href="#work"><div class="hover hovLeft">Work</div></a></div>
-			<!-- May break this out into new full page -->
-			<!-- <div class="navOption"><a href="#footer"><div class="hover hovLeft">Social</div></a></div> -->
+            <div class="navOption"><a href="#work"><div class="hover hovLeft">Work</div></a></div>
+            <div class="navOption"><a href="#contact"><div class="hover hovLeft">Contact</div></a></div>
+            <div id="footer">
+                <div class="footerIcons">
+                    <a href="https://github.com/SteliosPhanartzis" target="blank"><img src="images/github.svg" alt="Github logo"></a>
+                    <a href="https://www.linkedin.com/in/stelios-phanartzis/" target="blank"><img src="images/linkedin.svg" alt="LinkedIn logo"></a>
+                    <a href="mailto:stelios.phan@gmail.com"><img src="images/mail.svg"></a>
+                    <a href="https://drive.google.com/file/d/1uq9_uuQf3oL8_p5pQaVzYjjINbdUJ0Ha/view?usp=sharing" target="blank"><img src="images/resume.svg"></a>
+                </div>
+            </div>
 		</div>
 	</div>
-	<div id="landing" class="section">
-		<div class="contentWrapper">
-			<div class="contentL">
-				<h1>Stelios Phanartzis</h1>
-				<p>Hello, my name is Stelios Phanartzis.<br>
-					I am a <span class="blue">Full Stack Web Developer &amp; IT Specialist.</span>
-				</p>
-				<ul>
-					<li><p>Front/Back-end</p></li>
-					<li><p>Core Development</p></li>
-					<li><p>Data Analysis</p></li>
-					<li><p>Support Desk</p></li>
-					<li><p>System Administration</p></li>
-				</ul>
-			</div>
-			<div class="landingR">
-				<img class="pic" src="images/profile@2x.png" alt="Stelios Phanartzis Profile Pic">
-				<div class="picAccent"></div>
-			</div>
-		</div>
-	</div>
-	<div id="about" class="section">
-		<div class="contentWrapper">
-			<div class="contentL">
-				<div>
-					<h1>About Me</h1>
-				</div>
-				<p> I am a Computer Science major with 4 years of 
-					tech industry experience in domain management, 
-					network administration, and full stack web development. 
-					My interests are in privacy and security, full stack 
-					web applications, and data science. I am 
-					currently completing my BS in computer science with a minor
-					in mathematics at Queens College.</p>
-					<p><a class="blue" href="#footer">Contact me</a></p>
-			</div>
-			<div class="aboutR">
-				<img class="pic aboutpic" src="images/presentation@2x.png" alt="Stelios Phanartzis Pic">
-				<div class="picAccent aboutpicAccent"></div>
-			</div>
-		</div>
-	</div>
-	<div id="work" class="section">
-		<div class="contentWrapper">
-			<div class="contentFull">
-				<div>
-					<h1>Work</h1>
-				</div>
-				<div class="carousel-container">
-					<div class="carousel">
-						<a href="https://github.com/SteliosPhanartzis/ReminderList">
-							<div>
-								<div>
-									<h2>Reminder List</h2><br>
-									<p>
-										A simple, elegant and easy to use application to add, view, edit, and delete 
-										reminders based on location and/or time.
-									</p>
-								</div>
-								<img class="workPic" src="images/reminder@2x.png" alt="CS355 Website">
-							</div>
-						</a>
-						<a href="https://www.qc.cuny.edu/Academics/SupportPrograms/advising/Pages/default.aspx">
-							<div>
-								<div>
-									<h2>Academic Advising Center</h2><br>
-									<p>
-										A resource for all current and prospective Queens College students to 
-										assist in reaching their educational and career goals.
-									</p>
-								</div>
-								<img class="workPic" src="images/qcaac@2x.png" alt="Queens College Link">
-							</div>
-						</a>
-						<a href="https://ask-lawrence.herokuapp.com/">
-							<div>
-								<div>
-									<h2>Search-Engine</h2><br>
-									<p>
-										A web search engine designed to search for information on the World Wide Web, 
-										maintaining real-time information by running an algorithm on a web crawler 
-										and storing data in a relational database.
-									</p>
-								</div>
-								<img class="workPic" src="images/search@2x.png" alt="Ask-Lawrence Link">
-							</div>
-						</a>
-						<a href="https://github.com/SteliosPhanartzis/Reco">
-							<div>
-								<div>
-									<h2>Reco</h2><br>
-									<p>
-										A rating platform with a focus on integration in your social circle. 
-										It emphasizes ratings from the people you know to give you the feedback you can trust.
-									</p>
-								</div>
-								<img class="workPic" src="images/reco@2x.png" alt="Reco Link">
-							</div>
-						</a>
-						<a href="https://github.com/SteliosPhanartzis/ReminderList">
-							<div>
-								<div>
-									<h2>Reminder List</h2><br>
-									<p>
-										A simple, elegant and easy to use application to add, view, edit, and delete 
-										reminders based on location and/or time.
-									</p>
-								</div>
-								<img class="workPic" src="images/reminder@2x.png" alt="CS355 Website">
-							</div>
-						</a>
-						<a href="https://www.qc.cuny.edu/Academics/SupportPrograms/advising/Pages/default.aspx">
-							<div>
-								<div>
-									<h2>Academic Advising Center</h2><br>
-									<p>
-										A resource for all current and prospective Queens College students to 
-										assist in reaching their educational and career goals.
-									</p>
-								</div>
-								<img class="workPic" src="images/qcaac@2x.png" alt="Queens College Link">
-							</div>
-						</a>
-					</div>
-					<div class="selector">
-						<div class="highlight"></div>
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
-					<div class="change-project">
-						<div id="left" onclick="shift_slide(-1)">
-						</div>
-						<div id="right" onclick="shift_slide(+1)">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="footer">
-		<div class="footerIcons">
-			<a href="https://github.com/SteliosPhanartzis" target="blank"><img src="images/github.svg" alt="Github logo"></a>
-			<a href="https://www.linkedin.com/in/stelios-phanartzis/" target="blank"><img src="images/linkedin.svg" alt="LinkedIn logo"></a>
-			<a href="mailto:stelios.phan@gmail.com"><img src="images/mail.svg"></a>
-			<a href="https://drive.google.com/file/d/1uq9_uuQf3oL8_p5pQaVzYjjINbdUJ0Ha/view?usp=sharing" target="blank"><img src="images/resume.svg"></a>
-		</div>
-		<span>© 2019 Stelios Phanartzis</span>
-	</div>
-	<script src="index.js"></script>
 </body>
 </html>
