@@ -19,7 +19,7 @@ section {
     /* justify-content: center; */
     align-items: left;
     padding: 16em 0 2vh 0;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 section .content {
     text-align: center;
@@ -31,12 +31,17 @@ section .content h2 {
     text-transform: uppercase;
     font-weight: 900;
     line-height: 1em;
-    background-clip: text;
     background-attachment: fixed;
     background-size: cover;
     background-position-x: center;
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+@-moz-document url-prefix() {
+    section .content h2 {
+        transform-style: preserve-3d;
+    }
 }
 section:nth-child(1) .content h2 {
     text-align: center;
