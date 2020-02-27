@@ -38,10 +38,15 @@ section .content h2 {
     -webkit-background-clip: text;
     color: transparent;
 }
+/* temp support for ff */
 @-moz-document url-prefix() {
     section .content h2 {
         transform-style: preserve-3d;
     }
+}
+/* temp support for edge */
+_:-ms-lang(x), _:-webkit-full-screen, section .content h2 {
+    transform-style: preserve-3d;
 }
 section:nth-child(1) .content h2 {
     text-align: center;
