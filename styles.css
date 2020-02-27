@@ -64,6 +64,10 @@ section .content a {
     color: #000;
     margin-top: 20px;
 }
+section .content a:hover {
+    border-color: rgba(2,123,255,1);
+    color: rgba(2,123,255,1);
+}
 .left-align {
     text-align: left;
     padding: 0 1vw;
@@ -80,6 +84,23 @@ section .content a {
 }
 .projects{
     width: 10vw;
+}
+/* Use active */
+/* a:hover img{
+    width: 20vw;
+    height: auto;
+} */
+.static {
+    background: white;
+}
+a:hover .static { 
+    display: none;
+}
+.active {
+    display: none;
+}
+a:hover .active {
+    display: inherit;
 }
 .full-pic{
     width: 30em;
