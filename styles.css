@@ -50,16 +50,16 @@ _:-ms-lang(x), _:-webkit-full-screen, section .content h2 {
 }
 section:nth-child(1) .content h2 {
     text-align: center;
-    background-image: url(bg8.jpg);
+    background-image: url(images/background/bg8.jpg);
 }
 section:nth-child(2) .content h2 {
-    background-image: url(bg23.jpg);
+    background-image: url(images/background/bg23.jpg);
 }
 section:nth-child(3) .content h2 {
-    background-image: url(bg20.jpg);
+    background-image: url(images/background/bg20.jpg);
 }
 section:nth-child(4) .content h2 {
-    background-image: url(bg4.jpg);
+    background-image: url(images/background/bg4.jpg);
 }
 section .content p {
     font-size: 14pt;
@@ -113,7 +113,8 @@ a:hover .active {
     display: inherit;
 }
 .full-pic{
-    width: 30em;
+    margin-top: 5vh;
+    width: 45vw;
 }
 /*--Navigation--*/
 #logo, .hover, .navOption, .nav{
