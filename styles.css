@@ -88,6 +88,7 @@ section .content a:hover {
     align-items: flex-end;
     text-align: right;
     padding: 0 1vw;
+    right: 0;
 }
 .top-align {
     margin-top: -12em;
@@ -196,9 +197,13 @@ a:hover .active {
     .top-align{
         margin-top: 0;
     }
-    .full-pic {
+    .content {
         width: 18em;
-        overflow: hidden;
+        overflow-x: unset;
+    }
+    .full-pic {
+        width: 90%;
+        height: auto;
     }
     section .content p {
         font-size: 11pt;
