@@ -9,8 +9,11 @@
 :root{
 	--web-view-ids:Main
 }
-body, .content, .scroll{
+body {
 	overflow-x: hidden
+}
+.content, .scroll {
+    overflow: hidden;
 }
 section{
 	position:relative;
