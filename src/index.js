@@ -25,7 +25,7 @@ gsap.from(".title-right", {
 gsap.from(".left-align", {
     scrollTrigger: {
         trigger: ".left-align",
-        toggleActions: "restart restart restart reverse"
+        toggleActions: "restart none restart reverse"
     },
     x: -80,
     opacity: 0,
@@ -36,7 +36,7 @@ gsap.from(".left-align", {
 gsap.from(".right-align", {
     scrollTrigger: {
         trigger: ".right-align",
-        toggleActions: "restart restart restart pause"
+        toggleActions: "restart none restart pause"
     },
     x: 80,
     opacity: 0,
@@ -48,7 +48,7 @@ gsap.from(".right-align", {
 gsap.from(".full-pic", {
     scrollTrigger: {
         trigger: ".full-pic",
-        toggleActions: "restart restart restart pause"
+        toggleActions: "restart none restart pause"
     },
     x: 100,
     opacity: 0,
