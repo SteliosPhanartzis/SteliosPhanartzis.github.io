@@ -1,4 +1,26 @@
 gsap.registerPlugin(ScrollTrigger);
+/* Snap to section */
+let sections = gsap.utils.toArray("section");
+
+function goToSection(i, anim) {
+  gsap.to(window, {
+    scrollTo: {y: i*innerHeight, autoKill: false},
+    duration: 1
+  });
+  if(anim)
+    anim.restart();
+}
+sections.forEach((section, i) => {
+  ScrollTrigger.create({
+    trigger: section,
+    onEnter: () => goToSection(i)
+  });
+  ScrollTrigger.create({
+    trigger: section,
+    start: "bottom bottom",
+    onEnterBack: () => goToSection(i),
+  });
+});
 /* Title screen */
 gsap.from(".title-left", {
     scrollTrigger: {
