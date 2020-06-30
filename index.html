@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stelios Phanartzis Portfolio</title>
-    <link rel="stylesheet" href="styles.min.css">
+    <link rel="stylesheet preload" href="styles.min.css">
 </head>
 <body>
     <section id="intro">
@@ -15,8 +15,8 @@
     </section>
     <section id="about">
         <div class="content">
-            <h2 class="left-align">About</h2>
-            <p class ="left-align">I am a Computer Science major with five years of tech 
+            <h2 class="left-align bio">About</h2>
+            <p class ="left-align bio">I am a Computer Science major with five years of tech 
                 industry experience in Domain Management, System Administration, and 
                 Full-Stack Web Development. My interests are in privacy and security, 
                 full-stack web applications, and data science. I graduated in 
@@ -29,13 +29,25 @@
         </div>
     </section>
     <section id="work">
-        <div class="content top-align">
-            <a href="https://www.qc.cuny.edu/Academics/SupportPrograms/advising/Pages/default.aspx"><img rel="preload" class="projects static" src="images/work/AAC.png"/><img class="projects active" src="images/work/AAC.gif"/></a>
-            <a href="https://ask-lawrence.herokuapp.com/"><img rel="preload" class="projects static" src="images/work/Ask-Lawrence.png"/><img class="projects active" src="images/work/Ask-Lawrence.gif"/></a>
-            <a href="https://github.com/SteliosPhanartzis/Reco"><img rel="preload" class="projects static" src="images/work/Reco.png"/><img class="projects active" src="images/work/Reco.png"/></a>
-            <a href="https://github.com/SteliosPhanartzis/ReminderList"><img rel="preload" class="projects static" src="images/work/ReminderApp.png"/><img class="projects active" src="images/work/ReminderApp.gif"/></a>
-            <a href="https://github.com/SteliosPhanartzis/EHack"><img rel="preload" class="projects static" src="images/work/Restore.png"/><img class="projects active" src="images/work/Restore.png"/></a>
-            <a href="https://github.com/SteliosPhanartzis/Tip-Calculator"><img rel="preload" class="projects static" src="images/work/TipCalculator.png"/><img class="projects active" src="images/work/TipCalculator.gif"/></a>
+        <div class="content top-align work-items">
+            <a href="https://www.qc.cuny.edu/Academics/SupportPrograms/advising/Pages/default.aspx"><img rel="preload" class="projects static" src="images/work/AAC.png"/>
+                <!-- <img class="projects active" src="images/work/AAC.gif"/> -->
+            </a>
+            <a href="https://ask-lawrence.herokuapp.com/"><img rel="preload" class="projects static" src="images/work/Ask-Lawrence.png"/>
+                <!-- <img class="projects active" src="images/work/Ask-Lawrence.gif"/> -->
+            </a>
+            <a href="https://github.com/SteliosPhanartzis/Reco"><img rel="preload" class="projects static" src="images/work/Reco.png"/>
+                <!-- <img class="projects active" src="images/work/Reco.png"/> -->
+            </a>
+            <a href="https://github.com/SteliosPhanartzis/ReminderList"><img rel="preload" class="projects static" src="images/work/ReminderApp.png"/>
+                <!-- <img class="projects active" src="images/work/ReminderApp.gif"/> -->
+            </a>
+            <a href="https://github.com/SteliosPhanartzis/EHack"><img rel="preload" class="projects static" src="images/work/Restore.png"/>
+                <!-- <img class="projects active" src="images/work/Restore.png"/> -->
+            </a>
+            <a href="https://github.com/SteliosPhanartzis/Tip-Calculator"><img rel="preload" class="projects static" src="images/work/TipCalculator.png"/>
+                <!-- <img class="projects active" src="images/work/TipCalculator.gif"/> -->
+            </a>
         </div>
         <div class="content">
             <h2 class="right-align">Work</h2>
@@ -54,10 +66,10 @@
     </section>
     <div class="nav">
 		<div class="navGroup">
-            <a href='#intro'><span id="logo">Stelios</span></a>
-			<div class="navOption"><a href="#about"><div class="hover">About</div></a></div>
-            <div class="navOption"><a href="#work"><div class="hover hovLeft">Work</div></a></div>
-            <div class="navOption"><a href="#contact"><div class="hover hovLeft">Contact</div></a></div>
+            <a href='#intro' class="navItem"><span id="logo">Stelios</span></a>
+			<div class="navOption navItem"><a href="#about"><div class="hover">About</div></a></div>
+            <div class="navOption navItem"><a href="#work"><div class="hover hovLeft">Work</div></a></div>
+            <div class="navOption navItem"><a href="#contact"><div class="hover hovLeft">Contact</div></a></div>
             <div id="footer">
                 <div class="footerIcons">
                     <a href="https://github.com/SteliosPhanartzis" target="blank"><img rel="preload" src="images/icons/github.svg" alt="Github logo"></a>

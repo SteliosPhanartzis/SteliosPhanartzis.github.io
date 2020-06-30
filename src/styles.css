@@ -99,10 +99,10 @@ section .content a:hover{
     background:#fff
 }
 a:hover .static{
-    display:none
+    /*display:none*/
 }
 .active{
-    display:none
+    /*display:none*/
 }
 a:hover .active{
     display:inherit
@@ -118,6 +118,9 @@ a:hover .active{
 #logo,.hover,.navOption,.nav{
     display:inline-flex;
     color:#000
+}
+.work-items {
+    opacity: 1
 }
 .nav{
     font-size:1em;
