@@ -9,30 +9,31 @@ var mobile = (navigator.userAgent.match(/Android/i)
             || navigator.userAgent.match(/BlackBerry/i)
             || navigator.userAgent.match(/Windows Phone/i));
 /* Snap to section */
-function goToSection(i, anim) {
-    if(isScroll){
-        gsap.to(window, {
-        scrollTo: {y: i*innerHeight, autoKill: false},
-        duration: 1
-        });
-        if(anim)
-            anim.restart();
-    }
-}
-if (!mobile){
-    sections.forEach((section, i) => {
-      ScrollTrigger.create({
-        trigger: section,
-        onEnter: () => goToSection(i)
-      });
-      ScrollTrigger.create({
-        trigger: section,
-        scrub: true,
-        start: "top top",
-        onEnterBack: () => goToSection(i),
-      });
-    });
-}
+/* Code is kinda buggy depending on viewport ratio, will be fixed in refactor */
+// function goToSection(i, anim) {
+//     if(isScroll){
+//         gsap.to(window, {
+//         scrollTo: {y: i*innerHeight, autoKill: false},
+//         duration: 1
+//         });
+//         if(anim)
+//             anim.restart();
+//     }
+// }
+// if (!mobile){
+//     sections.forEach((section, i) => {
+//       ScrollTrigger.create({
+//         trigger: section,
+//         onEnter: () => goToSection(i)
+//       });
+//       ScrollTrigger.create({
+//         trigger: section,
+//         scrub: true,
+//         start: "top top",
+//         onEnterBack: () => goToSection(i),
+//       });
+//     });
+// }
 /* Title screen */
 gsap.from(".title-left", {
     scrollTrigger: {
