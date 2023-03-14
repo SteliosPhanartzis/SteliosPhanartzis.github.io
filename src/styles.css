@@ -37,14 +37,34 @@ section .content h2{
     -webkit-background-clip:text;
     color:transparent
 }
+
+section .content h3{
+    font-size:36pt;
+    text-transform:uppercase;
+    font-weight:600;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position-x:center;
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent
+}
+
+section .content h4{
+    font-size:22pt;
+    font-weight:600;
+}
 /* temp support for ff */
 @-moz-document url-prefix(){
     section .content h2{
         transform-style:preserve-3d
     }
+    section .content h3{
+        transform-style:preserve-3d
+    }
 }
 /* temp support for edge */
-_:-ms-lang(x),_:-webkit-full-screen,section .content h2{
+_:-ms-lang(x),_:-webkit-full-screen,section .content h2, section .content h3{
     transform-style:preserve-3d
 }
 section:nth-child(1) .content h2{
@@ -54,14 +74,14 @@ section:nth-child(1) .content h2{
 section:nth-child(2) .content h2{
     background-image:url(images/background/bg23.jpg)
 }
-section:nth-child(3) .content h2{
+section:nth-child(3) .content h2, section:nth-child(3) .content h3{
     background-image:url(images/background/bg20.jpg)
 }
 section:nth-child(4) .content h2{
     background-image:url(images/background/bg4.jpg)
 }
 section .content p{
-    font-size:14pt;
+    font-size:18pt;
     font-weight:500;
     max-width:800px
 }
@@ -90,7 +110,7 @@ section .content a:hover{
     right:0
 }
 .top-align{
-    margin-top:-12em
+    margin-top:-10vh
 }
 .projects{
     width:10vw
@@ -114,13 +134,34 @@ a:hover .active{
     margin-top:5vh;
     width:45vw
 }
+.work-items{
+    opacity: 1;
+    margin-top: -7vh;
+}
+.work-details:hover{
+    height: auto;
+}
+.work-details .work-title{
+    padding-left: 5px;
+    color: #444
+}
+.work-details .work-more{
+    display: none;
+    padding-left: 5px;
+}
+.work-details:hover div{
+    display: block;
+    padding-bottom: 15px;
+}
+li{
+    list-style: none;
+    border-width: 2px;
+    border-bottom: solid 2px #000;
+}
 /*--Navigation--*/
 #logo,.hover,.navOption,.nav{
     display:inline-flex;
     color:#000
-}
-.work-items {
-    opacity: 1
 }
 .nav{
     font-size:1em;
@@ -202,10 +243,23 @@ a:hover .active{
         
     }
     .full-pic{
-        width:90%;
-        height:auto
+        /* width:90%; */
+        /* height:auto */
+        display: none;
+    }
+    .bio{
+        width: 90vw;
     }
     section .content p{
-        font-size:11pt
+        font-size:12pt
+    }
+    section .content h2{
+        font-size:40pt;
+    }
+    section .content h3{
+        font-size:18pt;
+    }
+    section .content h4{
+        font-size:14pt;
     }
 }
