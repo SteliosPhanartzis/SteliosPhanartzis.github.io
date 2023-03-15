@@ -18,7 +18,7 @@ section{
     min-height:100vh;
     display:inline-flex;
     align-items:left;
-    padding:16em 0 2vh 0
+    padding:20vh 0 2vh 0
 }
 section .content{
     text-align:center;
@@ -39,7 +39,7 @@ section .content h2{
 }
 
 section .content h3{
-    font-size:36pt;
+    font-size:28pt;
     text-transform:uppercase;
     font-weight:600;
     background-attachment:fixed;
@@ -51,7 +51,7 @@ section .content h3{
 }
 
 section .content h4{
-    font-size:22pt;
+    font-size:20pt;
     font-weight:600;
 }
 /* temp support for ff */
@@ -81,7 +81,7 @@ section:nth-child(4) .content h2{
     background-image:url(images/background/bg4.jpg)
 }
 section .content p{
-    font-size:18pt;
+    font-size:14pt;
     font-weight:500;
     max-width:800px
 }
@@ -233,33 +233,30 @@ li{
     #footer{
         top:auto;
         bottom:3vh;
-        right:5vw
+        right:10vw;
     }
     .top-align{
         margin-top:0
     }
     .content{
         width:18em;
-        
     }
     .full-pic{
-        /* width:90%; */
-        /* height:auto */
         display: none;
     }
     .bio{
         width: 90vw;
     }
     section .content p{
-        font-size:12pt
+        font-size:10pt
     }
     section .content h2{
-        font-size:40pt;
+        font-size:36pt;
     }
     section .content h3{
-        font-size:18pt;
+        font-size:16pt;
     }
     section .content h4{
-        font-size:14pt;
+        font-size:12pt;
     }
 }
